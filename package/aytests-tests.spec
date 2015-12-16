@@ -45,7 +45,6 @@ For internal testing purposes only! Not useful on a real system!
 
 install -d $RPM_BUILD_ROOT/var/lib/autoinstall
 mv aytests $RPM_BUILD_ROOT/var/lib/autoinstall/
-mv lib $RPM_BUILD_ROOT/var/lib/autoinstall/aytests
 
 %files
 %defattr(-,root,root)
@@ -54,4 +53,3 @@ mv lib $RPM_BUILD_ROOT/var/lib/autoinstall/aytests
 %attr(755, -, root) /var/lib/autoinstall/aytests/*.sh
 
 %changelog
-
