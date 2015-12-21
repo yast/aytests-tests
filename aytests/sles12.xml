@@ -4,7 +4,7 @@
   <add-on>
     <add_on_products config:type="list">
       <listentry>
-        <media_url><![CDATA[http://%IP%:8888/static/repos/sles12]]></media_url>
+        <media_url><![CDATA[{{REPO1_URL}}]]></media_url>
         <product>custom</product>
         <product_dir>/</product_dir>
         <name>Customized</name>
