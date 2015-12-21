@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Mon Dec 21 09:03:08 UTC 2015 - igonzalezsosa@suse.com
+
+- Replaces %IP% for {{REPO1_URL}} variable in sles12.rb test.
+
+-------------------------------------------------------------------
 Mon Dec 14 14:44:22 UTC 2015 - igonzalezsosa@suse.com
 
 - Initial version
