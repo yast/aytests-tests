@@ -10,6 +10,13 @@
 
   <networking>
     <keep_install_network config:type="boolean">true</keep_install_network>
+    <net-udev config:type="list">
+      <rule>
+        <name>coolname</name>
+        <rule>ATTR{address}</rule>
+        <value>02:00:00:12:34:56</value>
+      </rule>
+    </net-udev>
   </networking>
 
   <software>
