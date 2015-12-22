@@ -14,7 +14,7 @@
       <rule>
         <name>coolname</name>
         <rule>ATTR{address}</rule>
-        <value>02:00:00:12:34:56</value>
+        <value>{{MAC1}}</value>
       </rule>
     </net-udev>
   </networking>
