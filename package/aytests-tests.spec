@@ -17,7 +17,7 @@
 
 
 Name:           aytests-tests
-Version:        1.0.1
+Version:        1.0.2
 Release:        0
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
@@ -31,7 +31,7 @@ Group:          System/YaST
 Url:            https://github.com/yast/aytests-tests
 
 # Depends on .vars files mechanism.
-Requires:       aytests >= 1.0.1
+Recommends:     aytests >= 1.0.1
 
 %description
 Profiles and test scripts for AutoYaST2 integration tests.
