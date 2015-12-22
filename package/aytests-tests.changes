@@ -1,7 +1,14 @@
 -------------------------------------------------------------------
+Tue Dec 22 00:50:05 UTC 2015 - igonzalezsosa@suse.com
+
+- Dependency on aytests is not mandatory anymore.
+- Version 1.0.2
+
+-------------------------------------------------------------------
 Mon Dec 21 09:03:08 UTC 2015 - igonzalezsosa@suse.com
 
 - Replaces %IP% for {{REPO1_URL}} variable in sles12.rb test.
+- Version 1.0.1
 
 -------------------------------------------------------------------
 Mon Dec 14 14:44:22 UTC 2015 - igonzalezsosa@suse.com
