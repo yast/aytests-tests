@@ -731,81 +731,15 @@ ls -l /mnt/$BASE
   </report>
   <software>
     <install_recommended config:type="boolean">false</install_recommended>
-    <packages config:type="list">
-      <package>aaa_base</package>
-      <package>bash</package>
-      <package>coreutils</package>
-      <package>cracklib-dict-full</package>
-      <package>device-mapper</package>
-      <package>e2fsprogs</package>
-      <package>elfutils</package>
-      <package>filesystem</package>
-      <package>gcc</package>
-      <package>glibc</package>
-      <package>grub2</package>
-      <package>initviocons</package>
-      <package>insserv</package>
-      <package>iputils</package>
-      <package>kbd</package>
-      <package>kernel-default</package>
-      <package>less</package>
-      <package>login</package>
-      <package>mkinitrd</package>
-      <package>module-init-tools</package>
-      <package>ncurses-utils</package>
-      <package>openssh</package>
-      <package>pam</package>
-      <package>pam-modules</package>
-      <package>procps</package>
-      <package>pwdutils</package>
-      <package>rpcbind</package>
-      <package>rpm</package>
-      <package>sudo</package>
-      <package>sysconfig</package>
-      <package>tar</package>
-      <package>timezone</package>
-      <package>vim</package>
-      <package>vim-base</package>
-      <package>w3m</package>
-      <package>zypper</package>
-      <package>rsync</package>
-      <package>ca-certificates-mozilla</package>
-      <package>glibc-locale</package>
-      <package>yast2-kdump</package>
-      <package>yast2-network</package>
-      <package>yast2-users</package>
-      <package>cronie</package>
-      <package>xinetd</package>
-      <package>tftp</package>
-      <package>bind</package>
-      <package>SuSEfirewall2</package>
-    </packages>
-    <post-packages config:type="list">
-      <package>bind</package>
-      <package>dummy-package</package>
-    </post-packages>
     <patterns config:type="list">
       <pattern>Minimal</pattern>
       <pattern>base</pattern>
     </patterns>
-    <remove-packages config:type="list">
-      <package>libyui-gtk-pkg5</package>
-      <package>libyui-gtk5</package>
-      <package>Mesa</package>
-      <package>libcairo2</package>
-      <package>libgtk-3-0</package>
-      <package>gtk3-tools</package>
-      <package>libpango-1_0-0</package>
-      <package>libcairo-gobject2</package>
-      <package>pango-tools</package>
-      <package>subversion</package>
-      <package>tk</package>
-      <package>libXft2</package>
-      <package>libtool</package>
-      <package>fontconfig</package>
-      <package>gitk</package>
-      <package>git-gui</package>
-    </remove-packages>
+    <packages config:type="list">
+      <!-- The following packages are needed to run postinstall.sh -->
+      <package>sudo</package>
+      <package>ca-certificates-mozilla</package>
+    </packages>
   </software>
   <users config:type="list">
     <user>
