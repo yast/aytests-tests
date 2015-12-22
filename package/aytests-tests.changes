@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Dec 22 08:14:24 UTC 2015 - igonzalezsosa@suse.com
+
+- Add tests to check udev network persistent rules (bsc#956605)
+- Version 1.0.3
+
+-------------------------------------------------------------------
 Tue Dec 22 00:50:05 UTC 2015 - igonzalezsosa@suse.com
 
 - Dependency on aytests is not mandatory anymore.
