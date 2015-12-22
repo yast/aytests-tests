@@ -3,3 +3,4 @@ root.sh                  # root hast /root home (bnc#878427)
 installation_snapshot.sh # snapshot has been created
 no_yast2_packages.sh     # YaST2 packages are not installed
 no_second_stage.sh       # second stage was not run
+udev_net_rules.sh        # Check udev network rules were written (bsc#956605)
