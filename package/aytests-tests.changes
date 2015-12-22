@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Dec 22 22:59:01 UTC 2015 - igonzalezsosa@suse.com
+
+- Fix basic SLES12 tests disabling network interface renaming
+- Replace MAC address with the variable {{MAC1}}
+- Version 1.0.4
+
+-------------------------------------------------------------------
 Tue Dec 22 08:14:24 UTC 2015 - igonzalezsosa@suse.com
 
 - Add tests to check udev network persistent rules (bsc#956605)
