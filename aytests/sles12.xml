@@ -633,19 +633,12 @@ ls -l /mnt/$BASE
     <interfaces config:type="list">
       <interface>
         <bootproto>dhcp</bootproto>
-        <device>coolname</device>
+        <device>eth0</device>
         <name>82540EM Gigabit Ethernet Controller</name>
         <startmode>nfsroot</startmode>
         <usercontrol>no</usercontrol>
       </interface>
     </interfaces>
-    <net-udev config:type="list">
-      <rule>
-        <name>coolname</name>
-        <rule>ATTR{address}</rule>
-        <value>02:00:00:12:34:56</value>
-      </rule>
-    </net-udev>
   </networking>
   <tftp-server>
     <start_tftpd config:type="boolean">true</start_tftpd>

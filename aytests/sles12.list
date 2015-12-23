@@ -15,4 +15,3 @@ kdump.sh                       # multiple crahskernel options were added to Kdum
 handle_zypper_pkg_gpg_check.sh # handles zypper's pkgGpgCheck callback during installation (bsc#948608)
 ifcfg_networking.sh            # configures network interfaces (bsc#949193)
 restart_services.sh            # do no restart dbus and wickedd* services (bsc#944349)
-udev_net_rules.sh              # check that udev net rules were written (bsc#956605)
