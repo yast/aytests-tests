@@ -239,6 +239,11 @@ ls -l /mnt/$BASE
 
     <init-scripts config:type="list">
       <script>
+        <filename>init_download.sh</filename>
+        <interpreter>shell</interpreter>
+        <location><![CDATA[{{INIT_SCRIPT_URL}}]]></location>
+      </script>
+      <script>
         <filename>init_ssh.sh</filename>
         <chrooted config:type="boolean">true</chrooted>
         <interpreter>shell</interpreter>
