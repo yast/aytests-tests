@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Jan 14 12:49:07 CET 2016 - schubi@suse.de
+
+- Download and run AutoYaST init scripts.
+- Version 1.0.5
+
+-------------------------------------------------------------------
 Tue Dec 22 22:59:01 UTC 2015 - igonzalezsosa@suse.com
 
 - Fix basic SLES12 tests disabling network interface renaming
