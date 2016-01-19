@@ -16,3 +16,4 @@ handle_zypper_pkg_gpg_check.sh # handles zypper's pkgGpgCheck callback during in
 ifcfg_networking.sh            # configures network interfaces (bsc#949193)
 restart_services.sh            # do no restart dbus and wickedd* services (bsc#944349)
 init_script.sh		       # download and execute init scripts (bnc#961320)
+check_schema.sh                # check generated AutoYaST profile (bsc#954412)

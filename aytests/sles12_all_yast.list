@@ -1,0 +1,1 @@
+check_schema.sh                # check generated AutoYaST profile (bsc#954412)
