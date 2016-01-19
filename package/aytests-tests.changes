@@ -1,4 +1,13 @@
 -------------------------------------------------------------------
+Tue Jan 19 10:32:19 UTC 2016 - igonzalezsosa@suse.com
+
+- Add tests to check the schema that was generated during
+  installation (/root/autoinst.xml).
+- Add a new test case which install additional YaST packages
+  to check the schema.
+- Version 1.0.6
+
+-------------------------------------------------------------------
 Thu Jan 14 12:49:07 CET 2016 - schubi@suse.de
 
 - Download and run AutoYaST init scripts.
