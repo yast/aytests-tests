@@ -709,6 +709,7 @@ ls -l /mnt/$BASE
     <errors>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
+      <!-- We expect error messages during installation. We will 'grep' for them. -->
       <timeout config:type="integer">5</timeout>
     </errors>
     <messages>
@@ -719,6 +720,7 @@ ls -l /mnt/$BASE
     <warnings>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
+      <!-- We expect warnings during installation. We will 'grep' for them. -->
       <timeout config:type="integer">5</timeout>
     </warnings>
     <yesno_messages>
