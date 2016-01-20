@@ -17,7 +17,7 @@
 
 
 Name:           aytests-tests
-Version:        1.0.6
+Version:        1.0.7
 Release:        0
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
