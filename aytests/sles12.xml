@@ -709,7 +709,7 @@ ls -l /mnt/$BASE
     <errors>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">0</timeout>
+      <timeout config:type="integer">5</timeout>
     </errors>
     <messages>
       <log config:type="boolean">true</log>
@@ -719,7 +719,7 @@ ls -l /mnt/$BASE
     <warnings>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">0</timeout>
+      <timeout config:type="integer">5</timeout>
     </warnings>
     <yesno_messages>
       <log config:type="boolean">true</log>
@@ -828,4 +828,30 @@ ls -l /mnt/$BASE
       <username>root</username>
     </user>
   </users>
+
+  <install>
+     <init>
+       <info_file>
+<![CDATA[
+#
+# Do not remove the following line:
+# start_linuxrc_conf
+#
+textmode: 1
+linuxrc.debug=1
+
+# end_linuxrc_conf
+# Do not remove the above comment
+#
+]]>
+      </info_file>
+    </init>
+  </install>
+  <unsupported>
+    <comment>This is a dummy and also unsupported section</comment>
+  </unsupported>
+
+  <sshd>
+    <comment>This is an obsolete section</comment>
+  </sshd>
 </profile>
