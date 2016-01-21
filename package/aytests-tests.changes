@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Jan 21 09:41:48 CET 2016 - schubi@suse.de
+
+- LVM: Add tests for value "auto" size paramter.
+  (bnc#962034)
+- Version 1.0.8
+
+-------------------------------------------------------------------
 Wed Jan 20 11:05:53 UTC 2016 - igonzalezsosa@suse.com
 
 - Add tests to check that obsolete and unsupported sections
