@@ -52,11 +52,23 @@ mv /var/run/zypp.sav /var/run/zypp.pid
     <enable_firewall config:type="boolean">false</enable_firewall>
     <start_firewall config:type="boolean">false</start_firewall>
   </firewall>
+  <ca_mgm>
+    <CAName>YaST_Default_CA</CAName>
+    <ca_commonName>YaST Default CA ()</ca_commonName>
+    <country>US</country>
+    <locality/>
+    <organisation/>
+    <organisationUnit/>
+    <password>ENTER PASSWORD HERE</password>
+    <server_email>postmaster@</server_email>
+    <state/>
+    <takeLocalServerName config:type="boolean">true</takeLocalServerName>
+  </ca_mgm>
   <report>
     <errors>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">0</timeout>
+      <timeout config:type="integer">3</timeout>
     </errors>
     <messages>
       <log config:type="boolean">true</log>

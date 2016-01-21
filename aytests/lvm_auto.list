@@ -1,2 +1,3 @@
 lvm.sh                   # creates lvm partitions
 lvm_auto.sh              # switching auto to max option (bnc#962238)
+ca_mgm.sh                # checking ca-management error (bnc#962328)
