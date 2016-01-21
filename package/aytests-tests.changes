@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Jan 21 13:58:44 CET 2016 - schubi@suse.de
+
+- Checking if ca management has reported an error and has gone on.
+  (bnc#962328)
+- Version 1.0.9
+
+-------------------------------------------------------------------
 Thu Jan 21 09:41:48 CET 2016 - schubi@suse.de
 
 - LVM: Add tests for value "auto" for "size" parameter.
