@@ -1,0 +1,2 @@
+lvm.sh                   # creates lvm partitions
+lvm_auto.sh              # switching auto to max option (bnc#962238)
