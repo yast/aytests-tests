@@ -7,6 +7,12 @@
     </mode>
   </general>
 
+  <firewall>
+    <FW_CONFIGURATIONS_EXT>sshd</FW_CONFIGURATIONS_EXT>
+    <enable_firewall config:type="boolean">false</enable_firewall>
+    <start_firewall config:type="boolean">false</start_firewall>
+  </firewall>
+
   <scripts>
 
     <pre-scripts config:type="list">
@@ -617,7 +623,7 @@ ls -l /mnt/$BASE
       <home>/home/vagrant</home>
       <shell>/bin/bash</shell>
       <uid>1000</uid>
-      <user_password>vagrant</user_password>
+      <user_password>nots3cr3t</user_password>
       <username>vagrant</username>
     </user>
     <user>
@@ -627,7 +633,7 @@ ls -l /mnt/$BASE
       <home>/root</home>
       <shell>/bin/bash</shell>
       <uid>0</uid>
-      <user_password>vagrant</user_password>
+      <user_password>nots3cr3t</user_password>
       <username>root</username>
     </user>
   </users>

@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Feb 11 09:59:56 UTC 2016 - igonzalezsosa@suse.com
+
+- Add a test to check that firewall settings are merged
+  during upgrade (related to bsc#963585).
+- Version 1.0.10
+
+-------------------------------------------------------------------
 Thu Jan 21 13:58:44 CET 2016 - schubi@suse.de
 
 - Checking if ca management has reported an error and has gone on.

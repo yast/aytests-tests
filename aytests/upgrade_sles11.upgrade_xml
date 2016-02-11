@@ -8,6 +8,10 @@
     </mode>
   </general>
 
+  <firewall>
+    <FW_SERVICES_EXT_TCP>8080</FW_SERVICES_EXT_TCP>
+  </firewall>
+
   <scripts>
 
     <pre-scripts config:type="list">

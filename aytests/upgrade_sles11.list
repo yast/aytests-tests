@@ -5,3 +5,4 @@ tmpfs.sh               # no tmpfs device in autoinst.xml (bnc#887126)
 no_registration.sh     # registration is not in autoinst.xml (bnc#888168)
 ntp_sync.sh            # ntp time syncing has been passed (#935066)
 autoupgrade-userscr.sh # user scripts have been run
+firewall_merged.sh     # firewall configuration was merged (bsc#963585)
