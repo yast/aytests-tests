@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Mar 18 09:02:17 UTC 2016 - igonzalezsosa@suse.com
+
+- Add a test to check if AutoYaST rules were correctly evaluated.
+- Version 1.0.15
+
+-------------------------------------------------------------------
 Tue Feb 23 17:09:17 UTC 2016 - igonzalezsosa@suse.com
 
 - Add a test to check that packages notifications are shown
