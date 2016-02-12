@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<autoinstall xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+  <rules config:type="list">
+    <rule>
+      <result>
+        <profile>profile1.xml</profile>
+        <continue config:type="boolean">true</continue>
+      </result>
+      <operator>and</operator>
+    </rule>
+    <rule>
+      <mac>
+        <match>020000123456</match>
+        <match_type>exact</match_type>
+      </mac>
+      <result>
+        <profile>minimal.xml</profile>
+        <continue config:type="boolean">false</continue>
+      </result>
+      <operator>and</operator>
+    </rule>
+  </rules>
+</autoinstall>
