@@ -57,6 +57,26 @@
       <user_password>nots3cr3t</user_password>
       <username>root</username>
     </user>
+    <!-- user with uncommon home directory (not in home) (bnc#966867)-->
+    <user>
+      <encrypted config:type="boolean">false</encrypted>
+      <fullname>System Admin Emergency Login</fullname>
+      <gid>999</gid>
+      <home>/admin</home>
+      <password_settings>
+        <expire></expire>
+        <flag></flag>
+        <inact></inact>
+        <max></max>
+        <min></min>
+        <warn></warn>
+      </password_settings>
+      <shell>/bin/bash</shell>
+      <uid>999</uid>
+      <groups></groups>
+      <username>sysadm</username>
+      <user_password>testeradmin</user_password>
+    </user>
   </users>
 
   <scripts>
