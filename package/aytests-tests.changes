@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri Feb 19 12:45:57 CET 2016 - schubi@suse.de
+
+- Reducing restarting service test to dbus service only in order
+  to run the tests on SLES-12-SP2 in openQA too.
+- Version 1.0.12
+
+-------------------------------------------------------------------
 Fri Feb 19 09:40:52 CET 2016 - schubi@suse.de
 
 - Creating uncommon user home directory (like /admin) has crashed
