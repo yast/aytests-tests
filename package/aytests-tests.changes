@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Feb 23 17:09:17 UTC 2016 - igonzalezsosa@suse.com
+
+- Add a test to check that packages notifications are shown
+  (bsc#943806)
+- Version 1.0.14
+
+-------------------------------------------------------------------
 Tue Feb 23 09:34:43 CET 2016 - schubi@suse.de
 
 - Fixed require paths.
