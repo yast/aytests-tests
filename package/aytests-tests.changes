@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Feb 23 09:34:43 CET 2016 - schubi@suse.de
+
+- Fixed require paths.
+- Version 1.0.13
+
+-------------------------------------------------------------------
 Fri Feb 19 12:45:57 CET 2016 - schubi@suse.de
 
 - Reducing restarting service test to dbus service only in order
