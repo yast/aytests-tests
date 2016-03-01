@@ -1,6 +1,21 @@
 <?xml version="1.0"?>
 <!DOCTYPE profile>
 <profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+  <add-on>
+    <add_on_products config:type="list">
+      <listentry>
+        <media_url><![CDATA[{{REPO_SLE11_URL}}]]></media_url>
+        <product>custom</product>
+        <product_dir>/</product_dir>
+        <name>Customized</name>
+        <signature-handling>
+          <accept_unknown_gpg_key config:type="boolean">true</accept_unknown_gpg_key>
+          <accept_unsigned_file config:type="boolean">true</accept_unsigned_file>
+        </signature-handling>
+      </listentry>
+    </add_on_products>
+  </add-on>
+
   <general>
     <mode>
       <confirm config:type="boolean">false</confirm>
@@ -553,6 +568,9 @@ ls -l /mnt/$BASE
       <package>coreutils</package>
       <package>cracklib-dict-full</package>
       <package>device-mapper</package>
+      <!-- dummy-package contains a libzypp's notification to be shown during
+           upgrade (bsc#943806) -->
+      <package>dummy-package</package>
       <package>e2fsprogs</package>
       <package>elfutils</package>
       <package>filesystem</package>
