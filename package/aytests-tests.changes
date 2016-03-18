@@ -1,7 +1,8 @@
 -------------------------------------------------------------------
 Fri Mar 18 09:02:17 UTC 2016 - igonzalezsosa@suse.com
 
-- Add a test to check if AutoYaST rules were correctly evaluated.
+- Add a test to check if AutoYaST rules were correctly evaluated
+  (bsc#963137).
 - Version 1.0.15
 
 -------------------------------------------------------------------
