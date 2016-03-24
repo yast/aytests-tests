@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Thu Mar 24 16:11:57 CET 2016 - schubi@suse.de
+
+- Upgrade: Removing yast2-ca-management code from inst-sys which
+  has been added by the DUD.
+  (bnc#0)
+- Version 1.0.16
+
+-------------------------------------------------------------------
 Fri Mar 18 09:02:17 UTC 2016 - igonzalezsosa@suse.com
 
 - Add a test to check if AutoYaST rules were correctly evaluated
