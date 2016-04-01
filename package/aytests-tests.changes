@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri Apr  1 09:21:08 CEST 2016 - schubi@suse.de
+
+- Unify tests: Taking zgrep which can handle compressed AND
+  uncompressed files.
+- Version 1.0.17
+
+-------------------------------------------------------------------
 Thu Mar 24 16:11:57 CET 2016 - schubi@suse.de
 
 - Upgrade: Removing yast2-ca-management code from inst-sys which
