@@ -5,4 +5,5 @@
 
 set -e -x
 
+# It's OK if we DO NOT find a blank password.
 getent shadow | grep -P "^[^:]+::" || echo "AUTOYAST OK"
