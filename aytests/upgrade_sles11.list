@@ -7,3 +7,4 @@ ntp_sync.sh               # ntp time syncing has been passed (#935066)
 autoupgrade-userscr.sh    # user scripts have been run
 firewall_merged.sh        # firewall configuration was merged (bsc#963585)
 packages_notifications.sh # show package notifications (bsc#943806)
+set_passwords.sh          # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)

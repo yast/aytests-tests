@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Apr 11 09:09:22 UTC 2016 - igonzalezsosa@suse.com
+
+- Add a test to check that password fields in /etc/shadow are
+  not empty (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
+- Version 1.0.18
+
+-------------------------------------------------------------------
 Fri Apr  1 09:21:08 CEST 2016 - schubi@suse.de
 
 - Unify tests: Taking zgrep which can handle compressed AND
