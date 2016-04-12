@@ -1,1 +1,2 @@
-ay_packages.sh                 # add packages described in the AY file (bnc#955657)
+ay_packages.sh   # add packages described in the AY file (bnc#955657)
+set_passwords.sh # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)

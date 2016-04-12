@@ -1,1 +1,2 @@
-check_schema.sh                # check generated AutoYaST profile (bsc#954412)
+check_schema.sh  # check generated AutoYaST profile (bsc#954412)
+set_passwords.sh # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
