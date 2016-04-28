@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Apr 28 15:52:38 CEST 2016 - schubi@suse.de
+
+- Fixed section <signature-handling> in <add-on> section.
+- Version 1.0.19
+
+-------------------------------------------------------------------
 Mon Apr 11 09:09:22 UTC 2016 - igonzalezsosa@suse.com
 
 - Add a test to check that password fields in /etc/shadow are
