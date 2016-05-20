@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri May 20 14:44:48 CEST 2016 - schubi@suse.de
+
+- Fixed new layout/location of unsupported sections.
+  (bnc#955878)
+- Version 1.0.20
+
+-------------------------------------------------------------------
 Thu Apr 28 15:52:38 CEST 2016 - schubi@suse.de
 
 - Fixed section <signature-handling> in <add-on> section.

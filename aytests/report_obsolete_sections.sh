@@ -4,5 +4,5 @@
 #
 set -e -x
 
-grep -Pzq "These sections of AutoYaST profile are not supported anymore:\n\n<sshd\/>\n\n" \
-  /var/log/YaST2/y2log && echo "AUTOYAST OK"
+zgrep "These sections of AutoYaST profile are not supported anymore:<br><br>&lt;sshd/&gt;<br><br>" \
+  /var/log/YaST2/y2log-1* && echo "AUTOYAST OK"
