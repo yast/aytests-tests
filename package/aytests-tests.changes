@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Jun 15 16:33:21 CEST 2016 - schubi@suse.de
+
+- Enable network in minimal/rules testcase.
+- Version 1.0.21
+
+-------------------------------------------------------------------
 Fri May 20 14:44:48 CEST 2016 - schubi@suse.de
 
 - Fixed new layout/location of unsupported sections.
