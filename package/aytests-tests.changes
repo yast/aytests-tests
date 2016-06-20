@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Jun 20 10:50:37 CEST 2016 - schubi@suse.de
+
+- Added ssh_import to expected AutoYaST file sections.
+- Version 1.0.22
+
+-------------------------------------------------------------------
 Wed Jun 15 16:33:21 CEST 2016 - schubi@suse.de
 
 - Enable network in minimal/rules testcase.
