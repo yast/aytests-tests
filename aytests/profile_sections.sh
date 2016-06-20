@@ -7,7 +7,8 @@ AUTOINST="/root/autoinst.xml"
 # Expected sections to be present in autoinst.xml
 EXPECTED=(add-on bootloader ca_mgm deploy_image firewall general groups host \
   kdump keyboard language login_settings networking ntp-client partitioning \
-  printer proxy report services-manager software timezone user_defaults users)
+  printer proxy report services-manager software timezone user_defaults users\
+  ssh_import)
 
 # Current present sections in autoinst.xml
 readarray -t PRESENT < <(sed  -n -re 's/^  <([[:alnum:]_\-]+).*/\1/p' $AUTOINST)
