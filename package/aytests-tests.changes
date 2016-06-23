@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Jun 23 13:10:58 CEST 2016 - schubi@suse.de
+
+- Removing unneeded repository during the upgrade process.
+  (Connection to the http server could not exists anymore)
+- Version 1.0.23
+
+-------------------------------------------------------------------
 Mon Jun 20 10:50:37 CEST 2016 - schubi@suse.de
 
 - Added ssh_import to expected AutoYaST file sections.

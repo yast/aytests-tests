@@ -107,7 +107,21 @@ mv $BASE /mnt/$BASE
 ls -l /mnt/$BASE
         ]]></source>
       <chrooted config:type="boolean">false</chrooted>
-
+      </script>
+      <script>
+        <filename>chroot_zypper.sh</filename>
+        <interpreter>shell</interpreter>
+        <location/>
+        <feedback config:type="boolean">false</feedback>
+	<feedback_type>error</feedback_type>
+        <source><![CDATA[#!/bin/sh
+# This repo will be loaded via http network but WEBrick could
+# have already been disabled and the repository is not available
+# anymore at that time. But we do not need it anymore. So we
+# are removing it before booting the second stage.
+zypper rr Customized
+        ]]></source>
+      <chrooted config:type="boolean">true</chrooted>
       </script>
     </chroot-scripts>
 
