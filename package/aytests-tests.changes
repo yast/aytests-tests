@@ -1,3 +1,8 @@
+Wed Jul 13 16:19:21 CEST 2016 - schubi@suse.de
+
+- sles12_network.xml: Fixed signature-handling in add-on products.
+- Version 1.0.27
+
 -------------------------------------------------------------------
 Wed Jul 13 14:09:43 UTC 2016 - igonzalezsosa@suse.com
 
