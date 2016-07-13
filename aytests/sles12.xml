@@ -32,6 +32,7 @@
       <generic_mbr>true</generic_mbr>
       <lines_cache_id>2</lines_cache_id>
       <timeout config:type="integer">8</timeout>
+      <append>elevator=noop</append>
     </global>
     <loader_type>grub2</loader_type>
     <sections config:type="list">
