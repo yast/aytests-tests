@@ -80,6 +80,11 @@
   </users>
 
   <scripts>
+    <!-- Ignoring empty scripts. bnc#986049 -->
+    <pre-scripts config:type="list">
+      <script>
+      </script>
+    </pre-scripts>
     <chroot-scripts config:type="list">
       <script>
         <chrooted config:type="boolean">true</chrooted>

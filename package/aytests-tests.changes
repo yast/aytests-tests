@@ -1,3 +1,9 @@
+-------------------------------------------------------------------
+Mon Aug  1 10:50:08 CEST 2016 - schubi@suse.de
+
+- Added testcase for empty scripts. (bnc#986049)
+
+-------------------------------------------------------------------
 Wed Jul 13 16:19:21 CEST 2016 - schubi@suse.de
 
 - sles12_network.xml: Fixed signature-handling in add-on products.
