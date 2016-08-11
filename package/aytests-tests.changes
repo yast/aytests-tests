@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Aug 11 07:13:58 UTC 2016 - igonzalezsosa@suse.com
+
+- Adapt self-update test to support multiple URLs in log messages
+  (FATE#319716)
+- 1.0.30
+
+-------------------------------------------------------------------
 Wed Aug  3 09:01:25 UTC 2016 - igonzalezsosa@suse.com
 
 - Add a test case to check SCC/SMT support in self-update
