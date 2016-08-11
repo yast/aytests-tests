@@ -1,7 +1,17 @@
 -------------------------------------------------------------------
+Wed Aug  3 09:01:25 UTC 2016 - igonzalezsosa@suse.com
+
+- Add a test case to check SCC/SMT support in self-update
+  (FATE#319716)
+- Add a test case to check certificates handling during
+  communication with registration servers (bsc#989787)
+- 1.0.29
+
+-------------------------------------------------------------------
 Mon Aug  1 10:50:08 CEST 2016 - schubi@suse.de
 
 - Added testcase for empty scripts. (bnc#986049)
+- 1.0.28
 
 -------------------------------------------------------------------
 Wed Jul 13 16:19:21 CEST 2016 - schubi@suse.de
