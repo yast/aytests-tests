@@ -861,4 +861,9 @@ linuxrc.debug=1
   <sshd>
     <comment>This is an obsolete section</comment>
   </sshd>
+
+  <!-- check bsc#991001 -->
+  <language>
+    <language>POSIX</language>
+  </language>
 </profile>
