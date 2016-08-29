@@ -6,6 +6,9 @@
       <confirm config:type="boolean">false</confirm>
       <second_stage config:type="boolean">false</second_stage>
     </mode>
+    <signature-handling>
+      <accept_unsigned_file config:type="boolean">true</accept_unsigned_file>
+    </signature-handling>
   </general>
 
   <suse_register>
