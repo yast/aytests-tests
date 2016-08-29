@@ -6,43 +6,7 @@
       <confirm config:type="boolean">false</confirm>
       <second_stage config:type="boolean">false</second_stage>
     </mode>
-    <signature-handling>
-      <accept_unsigned_file config:type="boolean">true</accept_unsigned_file>
-    </signature-handling>
   </general>
-
-  <suse_register>
-    <reg_server_cert_fingerprint>{{REG_CERT_FINGERPRINT}}</reg_server_cert_fingerprint>
-    <reg_code>regcode</reg_code>
-    <reg_server_cert_fingerprint_type>SHA1</reg_server_cert_fingerprint_type>
-    <reg_server>{{REG_SERVER_URL}}</reg_server>
-  </suse_register>
-
-  <report>
-    <errors>
-      <log config:type="boolean">true</log>
-      <show config:type="boolean">true</show>
-      <!-- We expect error messages during installation. We will 'grep' for them. -->
-      <timeout config:type="integer">5</timeout>
-    </errors>
-    <messages>
-      <log config:type="boolean">true</log>
-      <show config:type="boolean">true</show>
-      <!-- We expect messages during installation. We will 'grep' for them. -->
-      <timeout config:type="integer">5</timeout>
-    </messages>
-    <warnings>
-      <log config:type="boolean">true</log>
-      <show config:type="boolean">true</show>
-      <!-- We expect warnings during installation. We will 'grep' for them. -->
-      <timeout config:type="integer">5</timeout>
-    </warnings>
-    <yesno_messages>
-      <log config:type="boolean">true</log>
-      <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
-    </yesno_messages>
-  </report>
 
   <networking>
     <keep_install_network config:type="boolean">true</keep_install_network>

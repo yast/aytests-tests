@@ -1,0 +1,2 @@
+self_update_disabled.sh  # test that the installer self-update was disabled (FATE#319716)
+add_on_products.sh       # check add_on_products.xml handling (bsc#992608, bsc#991935)

@@ -1,4 +1,15 @@
 -------------------------------------------------------------------
+Mon Aug 29 14:47:56 UTC 2016 - igonzalezsosa@suse.com
+
+- Add a test about add_on_products.xml file handling
+  (bsc#992608, bsc#991935)
+- FATE#319716:
+  - Add the self-update test to the upgrade scenario
+  - Test whether the self-update feature can be disabled
+  - Fix self-update test through a fake registration server
+- 1.0.32
+
+-------------------------------------------------------------------
 Fri Aug 12 08:31:55 UTC 2016 - igonzalezsosa@suse.com
 
 - Check whether invalid languages are handled properly (bsc#991001)
