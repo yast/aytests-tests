@@ -1,1 +1,2 @@
 self_update.sh           # test the installer self-update (FATE#319716)
+add_on_products.sh       # check add_on_products.xml handling (bsc#992608, bsc#991935)
