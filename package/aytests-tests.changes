@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Tue Aug 30 10:15:57 UTC 2016 - igonzalezsosa@suse.com
+
+- FATE#319716:
+  - Adapt upgrade scenario to use the fake registration server
+  - Fix test about disabling self-update
+- 1.0.33
+
+-------------------------------------------------------------------
 Mon Aug 29 14:47:56 UTC 2016 - igonzalezsosa@suse.com
 
 - Add a test about add_on_products.xml file handling
