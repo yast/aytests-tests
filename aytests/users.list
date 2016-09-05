@@ -1,0 +1,3 @@
+users_no_uid.sh        # No error report for not defined user UIDs. (bnc#996823)
+double_users.sh        # Report error for duplicate user names. (bnc#995397)
+set_passwords.sh       # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
