@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Sep  5 14:27:28 CEST 2016 - schubi@suse.de
+
+- Checking user entries for duplicate UIDs or usernames.
+  (bnc#996823, bnc#995397)
+- 1.0.24
+
+-------------------------------------------------------------------
 Tue Aug 30 10:15:57 UTC 2016 - igonzalezsosa@suse.com
 
 - FATE#319716:
