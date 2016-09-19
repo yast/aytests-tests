@@ -646,6 +646,16 @@ ls -l /mnt/$BASE
     </user>
     <user>
       <encrypted config:type="boolean">false</encrypted>
+      <fullname>suse</fullname>
+      <gid>100</gid>
+      <home>/home/suse</home>
+      <shell>/bin/bash</shell>
+      <uid>1001</uid>
+      <user_password>nots3cr3t</user_password>
+      <username>suse</username>
+    </user>
+    <user>
+      <encrypted config:type="boolean">false</encrypted>
       <fullname>root</fullname>
       <gid>0</gid>
       <home>/root</home>

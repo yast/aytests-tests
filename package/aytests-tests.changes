@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Sep 19 14:16:02 UTC 2016 - igonzalezsosa@suse.com
+
+- Add that authorized_keys files are handled during
+  autoinstallation and autoupgrade (FATE#319471)
+- 1.0.25
+
+-------------------------------------------------------------------
 Mon Sep  5 14:27:28 CEST 2016 - schubi@suse.de
 
 - Checking user entries for duplicate UIDs or usernames.
