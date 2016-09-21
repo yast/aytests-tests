@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 Mon Sep 19 14:16:02 UTC 2016 - igonzalezsosa@suse.com
 
-- Add that authorized_keys files are handled during
+- Add a test to check that authorized_keys files are handled during
   autoinstallation and autoupgrade (FATE#319471)
 - 1.0.25
 
