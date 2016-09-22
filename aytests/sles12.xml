@@ -141,6 +141,7 @@ echo $STR >> $BASE/userscr.log
         <feedback config:type="boolean">false</feedback>
         <source><![CDATA[#!/bin/sh
 mv /var/run/zypp.pid /var/run/zypp.sav
+test -f /root/autoinst.xml && rm /root/autoinst.xml
 yast clone_system
 mv /var/run/zypp.sav /var/run/zypp.pid
         ]]></source>
@@ -823,6 +824,20 @@ ls -l /mnt/$BASE
       <uid>1000</uid>
       <user_password>nots3cr3t</user_password>
       <username>vagrant</username>
+    </user>
+    <user>
+      <encrypted config:type="boolean">false</encrypted>
+      <fullname>suse</fullname>
+      <gid>100</gid>
+      <home>/home/suse</home>
+      <shell>/bin/bash</shell>
+      <uid>1001</uid>
+      <user_password>nots3cr3t</user_password>
+      <username>suse</username>
+      <authorized_keys config:type="list">
+        <authorized_key>Tunnel="0" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKLt1vnW2vTJpBp3VK91rFsBvpY97NljsVLdgUrlPbZ/L51FerQQ+djQ/ivDASQjO+567nMGqfYGFA/De1EGMMEoeShza67qjNi14L1HBGgVojaNajMR/NI2d1kDyvsgRy7D7FT5UGGUNT0dlcSD3b85zwgHeYLidgcGIoKeRi7HpVDOOTyhwUv4sq3ubrPCWARgPeOLdVFa9clC8PTZdxSeKp4jpNjIHEyREPin2Un1luCIPWrOYyym7aRJEPopCEqBA9HvfwpbuwBI5F0uIWZgSQLfpwW86599fBo/PvMDa96DpxH1VlzJlAIHQsMkMHbsCazPNC0++Kp5ZVERiH vagrant@localhost.net</authorized_key>
+        <authorized_key>non valid ssh key</authorized_key>
+      </authorized_keys>
     </user>
     <user>
       <encrypted config:type="boolean">false</encrypted>
