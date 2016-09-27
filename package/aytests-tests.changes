@@ -1,16 +1,22 @@
 -------------------------------------------------------------------
+Mon Sep 26 17:31:12 CEST 2016 - schubi@suse.de
+
+- Added Kdump tests (bnc#997448)
+- 1.0.36
+
+-------------------------------------------------------------------
 Mon Sep 19 14:16:02 UTC 2016 - igonzalezsosa@suse.com
 
 - Add a test to check that authorized_keys files are handled during
   autoinstallation and autoupgrade (FATE#319471)
-- 1.0.25
+- 1.0.35
 
 -------------------------------------------------------------------
 Mon Sep  5 14:27:28 CEST 2016 - schubi@suse.de
 
 - Checking user entries for duplicate UIDs or usernames.
   (bnc#996823, bnc#995397)
-- 1.0.24
+- 1.0.34
 
 -------------------------------------------------------------------
 Tue Aug 30 10:15:57 UTC 2016 - igonzalezsosa@suse.com
