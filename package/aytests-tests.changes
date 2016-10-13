@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Oct 13 12:11:24 UTC 2016 - igonzalezsosa@suse.com
+
+- Set errors and messages timeout during upgrade to SLE 12
+- 1.0.37
+
+-------------------------------------------------------------------
 Mon Sep 26 17:31:12 CEST 2016 - schubi@suse.de
 
 - Added Kdump tests (bnc#997448)
