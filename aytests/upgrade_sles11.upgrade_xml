@@ -189,7 +189,7 @@ zypper rr Customized
     <errors>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">0</timeout>
+      <timeout config:type="integer">5</timeout>
     </errors>
     <messages>
       <log config:type="boolean">true</log>
@@ -199,7 +199,7 @@ zypper rr Customized
     <warnings>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">0</timeout>
+      <timeout config:type="integer">5</timeout>
     </warnings>
     <yesno_messages>
       <log config:type="boolean">true</log>
