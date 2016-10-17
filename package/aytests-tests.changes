@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Oct 14 16:03:35 UTC 2016 - igonzalezsosa@suse.com
+
+- Set a timeout for all kind of messages
+- 1.0.38
+
+-------------------------------------------------------------------
 Thu Oct 13 12:11:24 UTC 2016 - igonzalezsosa@suse.com
 
 - Set errors and messages timeout during upgrade to SLE 12
