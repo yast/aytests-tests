@@ -217,10 +217,6 @@ zypper rr Customized
       <uid>1001</uid>
       <user_password>nots3cr3t</user_password>
       <username>suse</username>
-      <authorized_keys config:type="list">
-        <authorized_key>Tunnel="0" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKLt1vnW2vTJpBp3VK91rFsBvpY97NljsVLdgUrlPbZ/L51FerQQ+djQ/ivDASQjO+567nMGqfYGFA/De1EGMMEoeShza67qjNi14L1HBGgVojaNajMR/NI2d1kDyvsgRy7D7FT5UGGUNT0dlcSD3b85zwgHeYLidgcGIoKeRi7HpVDOOTyhwUv4sq3ubrPCWARgPeOLdVFa9clC8PTZdxSeKp4jpNjIHEyREPin2Un1luCIPWrOYyym7aRJEPopCEqBA9HvfwpbuwBI5F0uIWZgSQLfpwW86599fBo/PvMDa96DpxH1VlzJlAIHQsMkMHbsCazPNC0++Kp5ZVERiH vagrant@localhost.net</authorized_key>
-        <authorized_key>non valid ssh key</authorized_key>
-      </authorized_keys>
     </user>
   </users>
   <upgrade>
