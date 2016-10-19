@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Oct 19 13:29:17 UTC 2016 - igonzalezsosa@suse.com
+
+- Remove authorized_keys tests as this feature is not available
+  in SLE-12-SP2.
+- 1.0.39
+
+-------------------------------------------------------------------
 Fri Oct 14 16:03:35 UTC 2016 - igonzalezsosa@suse.com
 
 - Set a timeout for all kind of messages
