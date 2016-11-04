@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri Nov  4 15:48:54 UTC 2016 - igonzalezsosa@suse.com
+
+- Bump package version to avoid conflicts with SLE-12-SP2
+  and SLE-12-SP2-CASP branches
+- 1.1.0
+
+-------------------------------------------------------------------
 Thu Nov  3 12:44:20 UTC 2016 - igonzalezsosa@suse.com
 
 - Add tests for Btrfs subvolumes handling (FATE#320342 and
