@@ -3,7 +3,7 @@ Thu Nov  3 12:44:20 UTC 2016 - igonzalezsosa@suse.com
 
 - Add tests for Btrfs subvolumes handling (FATE#320342 and
   FATE#317775)
-- 1.0.39.1
+- 1.0.40
 
 -------------------------------------------------------------------
 Wed Oct 19 13:29:17 UTC 2016 - igonzalezsosa@suse.com
