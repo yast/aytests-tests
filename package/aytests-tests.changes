@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Fri Nov  4 15:46:55 UTC 2016 - igonzalezsosa@suse.com
+
+- Remove tests for Btrfs subvolumes handling (FATE#320342 and
+  FATE#317775) as this feature is not in SLE 12 SP2
+- Fix versioning (master will use 1.1.x)
+- 1.0.41
+
+-------------------------------------------------------------------
 Thu Nov  3 12:44:20 UTC 2016 - igonzalezsosa@suse.com
 
 - Add tests for Btrfs subvolumes handling (FATE#320342 and
