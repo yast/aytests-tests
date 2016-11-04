@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Nov  3 12:44:20 UTC 2016 - igonzalezsosa@suse.com
+
+- Add tests for Btrfs subvolumes handling (FATE#320342 and
+  FATE#317775)
+- 1.0.40
+
+-------------------------------------------------------------------
 Fri Oct 14 16:03:35 UTC 2016 - igonzalezsosa@suse.com
 
 - Set a timeout for all kind of messages

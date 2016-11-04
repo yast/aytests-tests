@@ -68,6 +68,9 @@
       <confirm config:type="boolean">false</confirm>
       <ntp_sync_time_before_installation>ntp.suse.de</ntp_sync_time_before_installation>
     </mode>
+    <storage>
+      <btrfs_set_default_subvolume_name config:type="boolean">false</btrfs_set_default_subvolume_name>
+    </storage>
   </general>
 
   <scripts>
