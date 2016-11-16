@@ -1,4 +1,13 @@
 -------------------------------------------------------------------
+Wed Nov 16 16:30:43 UTC 2016 - igonzalezsosa@suse.com
+
+- Check that a 'runlevel' section is properly handled
+  (related to bsc#887115)
+- Set a timeout for messages during the upgrade scenario
+  so installation/upgrade is not blocked anymore
+- 1.0.42
+
+-------------------------------------------------------------------
 Fri Nov  4 15:46:55 UTC 2016 - igonzalezsosa@suse.com
 
 - Remove tests for Btrfs subvolumes handling (FATE#320342 and
