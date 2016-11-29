@@ -1,0 +1,4 @@
+user.sh                  # vagrant user has been created
+installation_snapshot.sh # snapshot has been created
+subvolumes.sh            # subvolumes are correctly in autoinst.xml (bnc#882982)
+btrfs_snapshots.sh       # creates @/. snapshots on LVM (bnc#935858)

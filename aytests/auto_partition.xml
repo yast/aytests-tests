@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<!DOCTYPE profile>
+<profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+  <general>
+    <mode>
+      <confirm config:type="boolean">false</confirm>
+      <second_stage config:type="boolean">false</second_stage>
+    </mode>
+  </general>
+
+  <partitioning config:type="list">
+    <drive>
+      <initialize config:type="boolean">true</initialize>
+      <device>/dev/vda</device>
+      <use>all</use>
+    </drive>
+  </partitioning>
+
+  <software>
+    <install_recommended config:type="boolean">false</install_recommended>
+    <patterns config:type="list">
+      <pattern>Minimal</pattern>
+    </patterns>
+    <packages config:type="list">
+      <!-- An SSH server is needed to perform the integration tests -->
+      <package>openssh</package>
+      <!-- The following packages are needed to run postinstall.sh -->
+      <package>sudo</package>
+      <package>curl</package>
+      <package>ca-certificates-mozilla</package>
+      <!-- Workaround about missing glibc-locale -->
+      <package>glibc-locale</package>
+    </packages>
+  </software>
+
+  <users config:type="list">
+    <user>
+      <encrypted config:type="boolean">false</encrypted>
+      <fullname>vagrant</fullname>
+      <gid>100</gid>
+      <home>/home/vagrant</home>
+      <shell>/bin/bash</shell>
+      <uid>1000</uid>
+      <user_password>nots3cr3t</user_password>
+      <username>vagrant</username>
+    </user>
+    <user>
+      <encrypted config:type="boolean">false</encrypted>
+      <fullname>root</fullname>
+      <gid>0</gid>
+      <home>/root</home>
+      <shell>/bin/bash</shell>
+      <uid>0</uid>
+      <user_password>nots3cr3t</user_password>
+      <username>root</username>
+    </user>
+    <!-- user with uncommon home directory (not in home) (bnc#966867)-->
+    <user>
+      <encrypted config:type="boolean">false</encrypted>
+      <fullname>System Admin Emergency Login</fullname>
+      <gid>999</gid>
+      <home>/admin</home>
+      <password_settings>
+        <expire></expire>
+        <flag></flag>
+        <inact></inact>
+        <max></max>
+        <min></min>
+        <warn></warn>
+      </password_settings>
+      <shell>/bin/bash</shell>
+      <uid>999</uid>
+      <groups></groups>
+      <username>sysadm</username>
+      <user_password>testeradmin</user_password>
+    </user>
+  </users>
+
+  <scripts>
+    <!-- Ignoring empty scripts. bnc#986049 -->
+    <pre-scripts config:type="list">
+      <script>
+      </script>
+    </pre-scripts>
+    <chroot-scripts config:type="list">
+      <script>
+        <chrooted config:type="boolean">true</chrooted>
+        <filename>enable-ssh-service.sh</filename>
+        <interpreter>shell</interpreter>
+        <source><![CDATA[
+#!/bin/sh
+/usr/bin/systemctl enable sshd.service
+  ]]>
+        </source>
+      </script>
+    </chroot-scripts>
+
+    <post-scripts config:type="list">
+      <script>
+        <filename>yast_clone.sh</filename>
+        <interpreter>shell</interpreter>
+        <location/>
+        <feedback config:type="boolean">false</feedback>
+        <source><![CDATA[#!/bin/sh
+mv /var/run/zypp.pid /var/run/zypp.sav
+test -f /root/autoinst.xml && rm /root/autoinst.xml
+yast clone_system
+mv /var/run/zypp.sav /var/run/zypp.pid
+        ]]></source>
+      </script>
+    </post-scripts>
+  </scripts>
+</profile>
