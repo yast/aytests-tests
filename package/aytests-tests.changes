@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Apr  3 16:22:31 UTC 2017 - igonzalezsosa@suse.com
+
+- Check the auto partitioning creates default subvolumes
+- 1.0.48
+
+-------------------------------------------------------------------
 Mon Apr  3 13:45:07 UTC 2017 - igonzalezsosa@suse.com
 
 - Install tar in order to compress and download YaST2 logs
