@@ -38,6 +38,11 @@
 chmod 755 /srv/tftpboot
         ]]></source>
       </script>
+      <script>
+        <filename>post_download.sh</filename>
+        <interpreter>shell</interpreter>
+        <location><![CDATA[{{POST_SCRIPT_URL}}]]></location>
+      </script>
     </post-scripts>
   </scripts>
 
