@@ -10,3 +10,4 @@ append_kernel.sh               # append arguments to kernel configuration (relat
 btrfs_set_subvol_default_name.sh  # default subvolume name is set (FATE#317775)
 btrfs_copy_on_write_subvolumes.sh # Set copy-on-write options in Btrfs subvolumes (FATE#320342)
 no_second_stage.sh             # second stage is not available (bsc#1022267)
+minimalistic_libzypp_config.sh # libzypp minimalistic configuration (FATE#321764)
