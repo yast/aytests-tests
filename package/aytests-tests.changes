@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Feb  8 12:41:46 UTC 2017 - igonzalezsosa@suse.com
+
+- Add a pair of working tests for CaaSP 1.0
+- 1.0.39.2
+
+-------------------------------------------------------------------
 Thu Nov  3 12:44:20 UTC 2016 - igonzalezsosa@suse.com
 
 - Add tests for Btrfs subvolumes handling (FATE#320342 and

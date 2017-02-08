@@ -1,3 +1,0 @@
-user.sh          # vagrant user has been created
-partition.sh     # partition_id order fits (bnc#941096)
-set_passwords.sh # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
