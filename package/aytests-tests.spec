@@ -17,7 +17,7 @@
 
 
 Name:           aytests-tests
-Version:        1.0.39.1
+Version:        1.0.39.2
 Release:        0
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
@@ -30,8 +30,8 @@ License:        GPL-3.0
 Group:          System/YaST
 Url:            https://github.com/yast/aytests-tests
 
-# Depends on the vars substitution in .linuxrc files.
-Recommends:     aytests >= 1.0.7
+# Depends on CaaSP 1.0 support
+Recommends:     aytests >= 1.0.31
 
 %description
 Profiles and test scripts for AutoYaST2 integration tests.
