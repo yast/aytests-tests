@@ -1,9 +1,9 @@
 #!/bin/bash
 
 set -e -x
-LOGFILE='/root/userscripts/userscr.log'
+LOGFILE='/root/inst-sys/userscripts/userscr.log'
 RESULT=`cat $LOGFILE | sed -r -e s'@\:.*\:@:@' | tr '\n' '|'`
-EXPECTED='1:clean|1b:ok|2:ok|3:ok|4:ok|5:ok|'
+EXPECTED='1:clean|1b:ok|2:ok|'
 
 set -e +x
 
