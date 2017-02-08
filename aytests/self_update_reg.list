@@ -1,3 +1,0 @@
-self_update.sh           # test the installer self-update (FATE#319716)
-self_update_reg.sh       # test SCC/SMT and self-update integration (FATE#319716)
-import_certificate.sh    # certificate from reg server is imported (bsc#989787)
