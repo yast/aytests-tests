@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Feb  9 12:19:38 UTC 2017 - igonzalezsosa@suse.com
+
+- Check that the second stage was not available in CaaSP 1.0
+  (bsc#1022267)
+- 1.0.39.3
+
+-------------------------------------------------------------------
 Wed Feb  8 12:41:46 UTC 2017 - igonzalezsosa@suse.com
 
 - Add a pair of working tests for CaaSP 1.0
