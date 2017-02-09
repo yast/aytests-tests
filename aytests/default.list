@@ -9,3 +9,4 @@ set_passwords.sh               # password are set (bsc#973639, bsc#974220, bsc#9
 append_kernel.sh               # append arguments to kernel configuration (related to bsc#968192)
 btrfs_set_subvol_default_name.sh  # default subvolume name is set (FATE#317775)
 btrfs_copy_on_write_subvolumes.sh # Set copy-on-write options in Btrfs subvolumes (FATE#320342)
+no_second_stage.sh             # second stage is not available (bsc#1022267)
