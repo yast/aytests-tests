@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 Thu Feb 16 13:20:12 CET 2017 - schubi@suse.de
 
-- testcase: Services-manager has disabled apache2 in frist AND
+- testcase: Services-manager has disabled apache2 in first AND
   second installation stage.
 - 1.0.45
 
