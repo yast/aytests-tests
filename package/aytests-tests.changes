@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Feb 16 13:20:12 CET 2017 - schubi@suse.de
+
+- testcase: Services-manager has disabled apache2 in frist AND
+  second installation stage.
+- 1.0.45
+
+-------------------------------------------------------------------
 Mon Feb  6 11:04:52 CET 2017 - schubi@suse.de
 
 - Fixed no_restart_second_stage while checking for not restarting
