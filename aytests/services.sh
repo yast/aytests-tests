@@ -5,15 +5,17 @@
 # Services have been enabled/disabled in the first installation stage
 # because on CaaSP there is no second stage anymore.
 
-zgrep "systemctl enable sshd.service" /var/log/YaST2/y2log-1.gz
-zgrep "systemctl enable cloud-init-local.service" /var/log/YaST2/y2log-1.gz
-zgrep "systemctl enable cloud-init.service" /var/log/YaST2/y2log-1.gz
-zgrep "systemctl enable cloud-config.service" /var/log/YaST2/y2log-1.gz
-zgrep "systemctl enable cloud-final.service" /var/log/YaST2/y2log-1.gz
-zgrep "systemctl enable issue-generator.service" /var/log/YaST2/y2log-1.gz
-zgrep "systemctl enable issue-add-ssh-keys.service" /var/log/YaST2/y2log-1.gz
-zgrep "systemctl enable salt-minion.service" /var/log/YaST2/y2log-1.gz
-zgrep "systemctl disable purge-kernels.service" /var/log/YaST2/y2log-1.gz
+Y2LOG=/var/log/YaST2/y2log-1.gz
+
+zgrep "systemctl enable sshd.service" $Y2LOG
+zgrep "systemctl enable cloud-init-local.service" $Y2LOG
+zgrep "systemctl enable cloud-init.service" $Y2LOG
+zgrep "systemctl enable cloud-config.service" $Y2LOG
+zgrep "systemctl enable cloud-final.service" $Y2LOG
+zgrep "systemctl enable issue-generator.service" $Y2LOG
+zgrep "systemctl enable issue-add-ssh-keys.service" $Y2LOG
+zgrep "systemctl enable salt-minion.service" $Y2LOG
+zgrep "systemctl disable purge-kernels.service" $Y2LOG
 
 systemctl is-enabled sshd.service
 systemctl is-enabled cloud-init-local.service
