@@ -119,11 +119,6 @@
         <source>
 <![CDATA[
 #!/bin/sh
-/usr/bin/systemctl enable sshd
-/usr/bin/systemctl enable cloud-init-local cloud-init cloud-config cloud-final
-/usr/bin/systemctl enable issue-generator issue-add-ssh-keys
-/usr/bin/systemctl enable salt-minion
-/usr/bin/systemctl disable purge-kernels
 /usr/sbin/sshd-gen-keys-start
 echo "master: some-master" > /etc/salt/minion.d/master.conf]]>
         </source>

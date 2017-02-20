@@ -3,3 +3,4 @@ root.sh                        # root hast /root home (bnc#878427)
 ifcfg_networking.sh            # configures network interfaces (bsc#949193)
 set_passwords.sh               # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
 no_second_stage.sh             # second stage is not available (bsc#1022267)
+services.sh                    # checking for enabled/disabled services
