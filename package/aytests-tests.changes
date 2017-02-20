@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Feb 20 10:09:51 CET 2017 - schubi@suse.de
+
+- Testcase for enabling/disabling sercices in the first
+  installation stage.
+- 1.0.39.4
+
+-------------------------------------------------------------------
 Thu Feb  9 12:19:38 UTC 2017 - igonzalezsosa@suse.com
 
 - Check that the second stage was not available in CaaSP 1.0
