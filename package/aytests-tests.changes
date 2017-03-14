@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Mar 14 12:44:38 UTC 2017 - mvidner@suse.com
+
+- Test not downloading the release notes (bsc#1009276).
+- 1.0.46
+
+-------------------------------------------------------------------
 Thu Feb 16 13:20:12 CET 2017 - schubi@suse.de
 
 - testcase: Services-manager has disabled apache2 in first AND
