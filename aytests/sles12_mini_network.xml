@@ -51,6 +51,8 @@
       <package>ca-certificates-mozilla</package>
       <!-- Workaround about missing glibc-locale -->
       <package>glibc-locale</package>
+      <!-- We need tar to pack logs -->
+      <package>tar</package>
     </packages>
   </software>
 

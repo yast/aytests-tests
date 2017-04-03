@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Apr  3 13:45:07 UTC 2017 - igonzalezsosa@suse.com
+
+- Install tar in order to compress and download YaST2 logs
+- 1.0.47
+
+-------------------------------------------------------------------
 Tue Mar 14 12:44:38 UTC 2017 - mvidner@suse.com
 
 - Test not downloading the release notes (bsc#1009276).
