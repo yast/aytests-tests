@@ -1,0 +1,5 @@
+user.sh                  # vagrant user has been created
+root.sh                  # root has /root home (bnc#878427)
+installation_snapshot.sh # snapshot has been created
+set_passwords.sh         # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
+insserv.sh		 # check if yast still needs insserv or not (bnc#1026027)
