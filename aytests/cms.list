@@ -1,0 +1,2 @@
+set_passwords.sh       # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
+cms.sh                 # Salt configuration (fate#319830)
