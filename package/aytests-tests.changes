@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Apr 21 16:10:50 WEST 2017 - knut.anderssen@suse.com
+
+- Added test for CaaSP worker role profile (Fate#323250)
+- 1.0.39.5
+
+-------------------------------------------------------------------
 Mon Feb 20 10:09:51 CET 2017 - schubi@suse.de
 
 - Testcase for enabling/disabling services in the first
