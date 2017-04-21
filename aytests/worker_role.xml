@@ -129,7 +129,7 @@
       <script>
         <filename>configure-salt.sh</filename>
         <interpreter>shell</interpreter>
-        <chrooted config:type="boolean">false</chrooted>
+        <chrooted config:type="boolean">true</chrooted>
         <source>
 <![CDATA[
 #!/bin/sh
