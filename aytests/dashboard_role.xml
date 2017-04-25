@@ -148,22 +148,6 @@ systemctl enable ntpd
 ]]>
         </source>
       </script>
-      <script>
-        <filename>fix-services.sh</filename>
-        <interpreter>shell</interpreter>
-        <chrooted config:type="boolean">true</chrooted>
-        <source><![CDATA[
-#!/bin/sh
-/usr/sbin/sshd-gen-keys-start
-]]>
-        </source>
-      </script>
-      <script>
-        <location><![CDATA[{{POSTINSTALL_SCRIPT_URL}}]]></location>
-        <interpreter>shell</interpreter>
-        <filename>postinstall.sh</filename>
-        <chrooted config:type="boolean">true</chrooted>
-      </script>
     </chroot-scripts>
   </scripts>
   <users config:type="list">
