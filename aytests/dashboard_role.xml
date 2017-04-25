@@ -140,6 +140,7 @@
         <interpreter>shell</interpreter>
         <source><![CDATA[
 #!/bin/sh
+sed '/^server/d' -i /etc/ntp.conf
 for server in server1 server2 server3
 do
   echo "server ${server} iburst" >> /etc/ntp.conf
