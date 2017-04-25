@@ -30,8 +30,8 @@ License:        GPL-3.0
 Group:          System/YaST
 Url:            https://github.com/yast/aytests-tests
 
-# Depends on CaaSP 1.0 support
-Recommends:     aytests >= 1.0.31
+# post-installation script is ran by aytests instead of Veewee
+Recommends:     aytests >= 1.0.40
 
 %description
 Profiles and test scripts for AutoYaST2 integration tests.
