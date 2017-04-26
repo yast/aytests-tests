@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Apr 26 10:58:11 UTC 2017 - igonzalezsosa@suse.com
+
+- Check the fallback language when an unsupported one is specified
+- 1.0.48
+
+-------------------------------------------------------------------
 Mon Apr  3 13:45:07 UTC 2017 - igonzalezsosa@suse.com
 
 - Install tar in order to compress and download YaST2 logs
