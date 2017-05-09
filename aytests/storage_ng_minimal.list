@@ -1,0 +1,3 @@
+user.sh                  # vagrant user has been created
+root.sh                  # root has /root home (bnc#878427)
+own_home_partition.sh    # checking if /home has its own partition
