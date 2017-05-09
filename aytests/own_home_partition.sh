@@ -2,7 +2,7 @@
 
 set -e -x
 
-# Checking if /home has an own partition
+# Checking if /home has its own partition
 
 line=$(mount|grep "on /home") || HOME_SET=0
 partition=($line) || HOME_SET=0

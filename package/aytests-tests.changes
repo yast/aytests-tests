@@ -1,7 +1,8 @@
 -------------------------------------------------------------------
 Tue May  9 15:26:06 CEST 2017 - schubi@suse.de
 
-- Added testcase for storage-ng proposal.
+- Added testcase for storage-ng proposal (storage_ng_minimal)
+  This test needs rubygem-aytests (>= 1.0.41)
 - 1.1.4
 
 -------------------------------------------------------------------
