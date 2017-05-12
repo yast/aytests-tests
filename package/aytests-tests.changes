@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri May 12 15:22:58 CEST 2017 - schubi@suse.de
+
+- Fix for sles12-sp2 build
+- 1.1.5
+
+-------------------------------------------------------------------
 Tue May  9 15:26:06 CEST 2017 - schubi@suse.de
 
 - Added testcase for storage-ng proposal (storage_ng_minimal)
