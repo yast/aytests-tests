@@ -194,7 +194,7 @@ zypper rr Customized
     <messages>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">0</timeout>
+      <timeout config:type="integer">5</timeout>
     </messages>
     <warnings>
       <log config:type="boolean">true</log>
