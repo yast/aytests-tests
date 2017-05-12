@@ -9,5 +9,6 @@ firewall_merged.sh        # firewall configuration was merged (bsc#963585)
 packages_notifications.sh # show package notifications (bsc#943806)
 set_passwords.sh          # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
 self_update.sh            # test the installer self-update (FATE#319716)
-authorized_keys.sh        # check that authorized_keys were added (FATE#319471)
-renames_from_libzypp.sh   # read product renames information from libzypp (FATE#321751)
+# This test is working with the SLES12-SP3 only.
+# authorized_keys.sh        # check that authorized_keys were added (FATE#319471)
+# renames_from_libzypp.sh   # read product renames information from libzypp (FATE#321751)
