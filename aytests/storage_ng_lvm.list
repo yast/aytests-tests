@@ -1,0 +1,4 @@
+user.sh                  # vagrant user has been created
+root.sh                  # root has /root home (bnc#878427)
+root_on_lvm.sh           # Check whether the root is on top of a LVM logical volume
+no_separated_home.sh     # / and /home belong to the same filesystem
