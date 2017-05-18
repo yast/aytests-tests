@@ -1,0 +1,2 @@
+# Check that installer update and registration report errors
+report_invalid_regurl.sh
