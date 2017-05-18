@@ -1,8 +1,16 @@
 -------------------------------------------------------------------
+Thu May 18 06:26:27 UTC 2017 - knut.anderssen@suse.com
+
+- bsc#1035908
+  - Added test to check that the installation doesn't crash with an
+    invalid registration URL but reports it instead.
+- 1.1.7
+
+-------------------------------------------------------------------
 Tue May 16 10:33:28 UTC 2017 - igonzalezsosa@suse.com
 
 - Add a test case to check if storage-ng proposal settings are
-  overriden by the profile 
+  overriden by the profile
 - 1.1.6
 
 -------------------------------------------------------------------
