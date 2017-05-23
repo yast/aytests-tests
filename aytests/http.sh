@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e -x
+HO=`hostname`
 
 SuSEfirewall2 start
 rcapache2 start
@@ -11,9 +11,9 @@ HTTPRES=0
 
 echo test > /srv/www/htdocs/test.txt
 echo "[DEBUG] http test:"
-curl -s -S http://localhost/test.txt 2>&1 | tee $HTTPTEST
+curl -s -S http://$HO/test.txt 2>&1 | tee $HTTPTEST
 echo "[DEBUG] https -k test:"
-curl -s -S -k https://localhost/test.txt 2>&1 | tee $HTTPSTEST
+curl -s -S -k https://$HO/test.txt 2>&1 | tee $HTTPSTEST
 
 diff -u /srv/www/htdocs/test.txt $HTTPTEST && diff -u $HTTPTEST $HTTPSTEST && HTTPRES=1 || echo "[ERROR] HTTP/HTTPS test failed"
 
@@ -51,7 +51,7 @@ perl - opened <<EOP && IPTABLESRES=1
       }
     }
     elsif (\$proto eq 'udp') {
-      if (\$port =~ /9090|443/) {
+      if (\$port =~ /9090|443|5353/) {
         \$res += \$port;
       }
       else {
@@ -66,7 +66,7 @@ perl - opened <<EOP && IPTABLESRES=1
       \$res = -100;
     }
   }
-  if ((\$res != 18158) && (\$res != 17715)) {
+  if ((\$res != 23068)) {
     print "[ERROR] Some ports were not opened but expected or opened but not expected \$res \n";
     exit 1;
   }
