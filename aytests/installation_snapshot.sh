@@ -2,4 +2,5 @@
 
 set -e -x
 
-snapper list | grep "after installation" && echo "AUTOYAST OK"
+# grep fits to german too
+snapper list | grep -i "installation" && echo "AUTOYAST OK"
