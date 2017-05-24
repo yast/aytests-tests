@@ -69,6 +69,8 @@
       <package>yast2-squid</package>
       <package>yast2-sysconfig</package>
       <package>yast2-users</package>
+      <!-- missing requirement in yast2-nis-client; already fixed -->
+      <package>yp-tools</package>
     </packages>
   </software>
 
