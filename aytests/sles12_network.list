@@ -8,7 +8,7 @@ tmpfs.sh                       # no tmpfs device in autoinst.xml (bnc#887126)
 subvolumes.sh                  # subvolumes are correctly in autoinst.xml (bnc#882982)
 no_registration.sh             # registration is not in autoinst.xml (bnc#888168)
 ntp_sync.sh                    # ntp time syncing has been passed (bnc#935066)
-installation_snapshot.sh       # snapshot has been created
+installation_no_snapshot.sh    # snapshot has not been created and has not been exported (bnc#1039268)
 no_reinstall.sh                # do no reinstall packages in second stage (fate#319086)
 profile_sections.sh            # all expected sections are present in autoinst.xml (bnc#941948)
 kdump_default.sh               # Taking proposed values if <crash_kernel>, <general> have not been defined in AutoYaST configuration file. (bnc#997448)
@@ -16,5 +16,5 @@ handle_zypper_pkg_gpg_check.sh # handles zypper's pkgGpgCheck callback during in
 restart_services.sh            # do no restart dbus and wickedd* services (bsc#944349)
 udev_net_rules.sh              # Check udev network rules were written (bsc#956605)
 set_passwords.sh               # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
-# This test is working with the SLES12-SP3 only.
-# btrfs_empty_subvol_default_name.sh # default subvolume name is not set (FATE#317775)
+btrfs_empty_subvol_default_name.sh # default subvolume name is not set (FATE#317775)
+no_release_notes.sh            # release notes are not downloaded for AY (bsc#1009276)

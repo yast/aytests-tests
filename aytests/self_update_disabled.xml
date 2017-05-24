@@ -9,6 +9,9 @@
     <signature-handling>
       <!-- the repository contained in the Driver Update Disk is unsigned -->
       <accept_unsigned_file config:type="boolean">true</accept_unsigned_file>
+      <accept_unknown_gpg_key>
+        <all config:type="boolean">true</all>
+      </accept_unknown_gpg_key>
     </signature-handling>
   </general>
 

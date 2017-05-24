@@ -2,4 +2,6 @@
 
 set -e -x
 
-snapper list | grep "after installation" && echo "AUTOYAST OK"
+# It is enough to check the return value in order to check if
+# snapper has been set up correctly.
+snapper list && echo "AUTOYAST OK"

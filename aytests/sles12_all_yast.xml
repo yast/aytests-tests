@@ -5,6 +5,11 @@
     <mode>
       <confirm config:type="boolean">false</confirm>
     </mode>
+    <signature-handling>
+      <accept_unknown_gpg_key>
+        <all config:type="boolean">true</all>
+      </accept_unknown_gpg_key>
+    </signature-handling>
   </general>
 
   <networking>
@@ -64,6 +69,8 @@
       <package>yast2-squid</package>
       <package>yast2-sysconfig</package>
       <package>yast2-users</package>
+      <!-- missing requirement in yast2-nis-client; already fixed -->
+      <package>yp-tools</package>
     </packages>
   </software>
 

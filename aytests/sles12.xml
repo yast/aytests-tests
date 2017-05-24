@@ -90,6 +90,11 @@
       <confirm config:type="boolean">false</confirm>
       <ntp_sync_time_before_installation>ntp.suse.de</ntp_sync_time_before_installation>
     </mode>
+    <signature-handling>
+      <accept_unknown_gpg_key>
+        <all config:type="boolean">true</all>
+      </accept_unknown_gpg_key>
+    </signature-handling>
   </general>
 
   <scripts>

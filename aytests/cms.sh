@@ -7,7 +7,7 @@ grep "dummy" /etc/salt/pki/minion/minion.pem
 grep "dummy" /etc/salt/pki/minion/minion.pub
 
 # checking if the master has been set
-grep "master: 'linux-addc'" /etc/salt/minion
+grep "master: linux-addc" /etc/salt/minion.d/yast-configuration-management.conf
 
 # checking if the service is enabled
 systemctl is-enabled salt-minion.service

@@ -71,6 +71,11 @@
     <storage>
       <btrfs_set_default_subvolume_name config:type="boolean">false</btrfs_set_default_subvolume_name>
     </storage>
+    <signature-handling>
+      <accept_unknown_gpg_key>
+        <all config:type="boolean">true</all>
+      </accept_unknown_gpg_key>
+    </signature-handling>
   </general>
 
   <scripts>
@@ -641,7 +646,7 @@ ls -l /mnt/$BASE
     <drive>
       <device>/dev/vda</device>
       <disklabel>msdos</disklabel>
-      <enable_snapshots config:type="boolean">true</enable_snapshots>
+      <enable_snapshots config:type="boolean">false</enable_snapshots>
       <initialize config:type="boolean">true</initialize>
       <partitions config:type="list">
         <partition>

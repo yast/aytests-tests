@@ -6,6 +6,11 @@
       <confirm config:type="boolean">false</confirm>
       <second_stage config:type="boolean">false</second_stage>
     </mode>
+    <signature-handling>
+      <accept_unknown_gpg_key>
+        <all config:type="boolean">true</all>
+      </accept_unknown_gpg_key>
+    </signature-handling>
   </general>
 
   <networking>
