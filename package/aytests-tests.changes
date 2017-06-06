@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Jun  6 14:22:37 CEST 2017 - schubi@suse.de
+
+- Settings are written to /etc/ntp.conf correctly.(bnc#1040350)
+- 1.1.9
+
+-------------------------------------------------------------------
 Wed May 24 12:28:10 CEST 2017 - schubi@suse.de
 
 - Fixed tests for running under SLES12-SP3
