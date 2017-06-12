@@ -2,7 +2,7 @@
 Mon Jun 12 16:17:28 CEST 2017 - schubi@suse.de
 
 - Added missed ntp_conf.sh
-- Fix in ntp.conf produces correnct entries in AY configuration
+- Fix in ntp.conf produces correct entries in AutoYaST configuration
   file.(bnc#1040350)
 - 1.1.10
 
