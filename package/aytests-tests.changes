@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Jun 14 09:35:15 CEST 2017 - schubi@suse.de
+
+- Report shrinked partitions if there is not enough space.
+  (bnc##1039528)
+- 1.1.11
+
+-------------------------------------------------------------------
 Mon Jun 12 16:17:28 CEST 2017 - schubi@suse.de
 
 - Added missed ntp_conf.sh
