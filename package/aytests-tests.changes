@@ -1,4 +1,13 @@
 -------------------------------------------------------------------
+Fri Jun 16 15:16:20 UTC 2017 - igonzalezsosa@suse.com
+
+- Add test case for automated partitioning
+- Add test case for customized partitioning using the new
+  storage-ng layer. Currently, only plain partitions are supported
+  (bsc#1044697).
+- 1.1.12
+
+-------------------------------------------------------------------
 Wed Jun 14 09:35:15 CEST 2017 - schubi@suse.de
 
 - Report shrinked partitions if there is not enough space.
