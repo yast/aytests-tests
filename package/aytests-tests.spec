@@ -30,8 +30,8 @@ License:        GPL-3.0
 Group:          System/YaST
 Url:            https://github.com/yast/aytests-tests
 
-# Depends on the vars substitution in .linuxrc files.
-Recommends:     aytests >= 1.0.7
+# Depends on the ability to add new devices via the .add-devices files.
+Recommends:     aytests >= 1.0.49
 
 %description
 Profiles and test scripts for AutoYaST2 integration tests.
