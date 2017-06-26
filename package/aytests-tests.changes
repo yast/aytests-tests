@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Jun 26 15:21:18 UTC 2017 - igonzalezsosa@suse.com
+
+- Add a test to find out whether the profile was set according to
+  the profile (bsc#1023774)
+- 1.2.0
+
+-------------------------------------------------------------------
 Tue Jun 20 10:25:04 CEST 2017 - schubi@suse.de
 
 - Adding additional network device.
