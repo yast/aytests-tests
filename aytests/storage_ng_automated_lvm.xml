@@ -69,7 +69,7 @@
   <software>
     <install_recommended config:type="boolean">false</install_recommended>
     <patterns config:type="list">
-      <pattern>base</pattern>
+      <pattern>generic_server</pattern>
     </patterns>
     <packages config:type="list">
       <!-- An SSH server is needed to perform the integration tests -->
@@ -133,46 +133,6 @@
       <user_password>testeradmin</user_password>
     </user>
   </users>
-
-  <partitioning config:type="list">
-    <drive>
-     <device>/dev/vda</device>
-     <initialize config:type="boolean">true</initialize>
-     <partitions config:type="list">
-       <partition>
-         <create config:type="boolean">true</create>
-         <partition_nr config:type="integer">1</partition_nr>
-         <lvm_group>system</lvm_group>
-         <partition_type>primary</partition_type>
-         <size>20G</size>
-       </partition>
-     </partitions>
-     <use>all</use>
-    </drive>
-    <drive>
-      <device>/dev/system</device>
-      <type config:type="symbol">CT_LVM</type>
-      <partitions config:type="list">
-        <partition>
-          <filesystem config:type="symbol">ext4</filesystem>
-          <mountby config:type="symbol">label</mountby>
-          <lv_name>root</lv_name>
-          <label>root</label>
-          <mount>/</mount>
-          <size>5GB</size>
-        </partition>
-        <partition>
-          <filesystem config:type="symbol">xfs</filesystem>
-          <lv_name>home</lv_name>
-          <mount>/home</mount>
-          <label>sweet-home</label>
-          <size>10G</size>
-        </partition>
-      </partitions>
-      <pesize>4M</pesize>
-      <use>all</use>
-    </drive>
-  </partitioning>
 
   <scripts>
     <chroot-scripts config:type="list">

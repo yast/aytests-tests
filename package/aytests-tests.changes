@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Jun 28 11:43:09 UTC 2017 - igonzalezsosa@suse.com
+
+- Add a test for customized partitioning using LVM (bsc#1044697).
+- 1.2.1
+
+-------------------------------------------------------------------
 Mon Jun 26 15:21:18 UTC 2017 - igonzalezsosa@suse.com
 
 - Add a test to find out whether the profile was set according to
