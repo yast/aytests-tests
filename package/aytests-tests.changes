@@ -1,4 +1,14 @@
 -------------------------------------------------------------------
+Fri Jun 30 14:47:15 CEST 2017 - schubi@suse.de
+
+- DNS entry will not be generated in the first installation stage.
+  For SLES12-SP3 this can be done in the second stage only.
+  So do not check it in sles12_mini_network test because it has
+  an first installation stage only.
+  (bnc#1046198)
+- 1.1.12
+
+-------------------------------------------------------------------
 Wed Jun 14 09:35:15 CEST 2017 - schubi@suse.de
 
 - Report shrinked partitions if there is not enough space.
