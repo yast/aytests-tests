@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Jul  5 10:49:22 UTC 2017 - igonzalezsosa@suse.com
+
+- Add a test for checking that all sections are included when
+  cloning the system with storage-ng (fate#318196)
+- 1.2.2
+
+-------------------------------------------------------------------
 Wed Jun 28 11:43:09 UTC 2017 - igonzalezsosa@suse.com
 
 - Add a test for customized partitioning using LVM (bsc#1044697).
