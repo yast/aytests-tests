@@ -1,4 +1,5 @@
-user.sh                  # vagrant user has been created
-root.sh                  # root has /root home (bnc#878427)
-own_home_partition.sh    # checking if /home has its own partition
-plain_partitions.sh      # checking / and /home types and labels
+user.sh                        # vagrant user has been created
+root.sh                        # root has /root home (bnc#878427)
+own_home_partition.sh          # checking if /home has its own partition
+plain_partitions.sh            # checking / and /home types and labels
+profile_sections_storage_ng.sh # all expected sections are present in autoinst.xml (bnc#941948)

@@ -1,4 +1,5 @@
-user.sh                  # vagrant user has been created
-root.sh                  # root has /root home (bnc#878427)
-root_on_lvm.sh           # Check whether the root is on top of a LVM logical volume
-lvm_logical_volumes.sh
+user.sh                        # vagrant user has been created
+root.sh                        # root has /root home (bnc#878427)
+root_on_lvm.sh                 # Check whether the root is on top of a LVM logical volume
+lvm_logical_volumes.sh         # Check that LVM logical volumes were created
+profile_sections_storage_ng.sh # all expected sections are present in autoinst.xml (bnc#941948)
