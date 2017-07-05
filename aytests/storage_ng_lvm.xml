@@ -83,6 +83,8 @@
       <!-- Workaround about missing glibc-locale -->
       <package>glibc-locale</package>
       <package>yast2-network</package>
+      <!-- AutoYaST2 to clone the system -->
+      <package>autoyast2</package>
     </packages>
   </software>
 
@@ -185,6 +187,18 @@
 /usr/bin/systemctl enable sshd.service
   ]]>
         </source>
+      </script>
+      <script>
+        <filename>yast_clone.sh</filename>
+        <interpreter>shell</interpreter>
+        <location/>
+        <feedback config:type="boolean">false</feedback>
+        <source><![CDATA[#!/bin/sh
+mv /var/run/zypp.pid /var/run/zypp.sav
+test -f /root/autoinst.xml && rm /root/autoinst.xml
+yast clone_system
+mv /var/run/zypp.sav /var/run/zypp.pid
+        ]]></source>
       </script>
     </chroot-scripts>
   </scripts>

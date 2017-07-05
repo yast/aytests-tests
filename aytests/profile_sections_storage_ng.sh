@@ -1,13 +1,17 @@
 #!/bin/bash
 set -x
 
-# Check if expected sections are in the profile.
+# Check if expected sections are in the profile. This test should be replaced
+# by profile_sections.sh when storage-ng is finally merged.
 AUTOINST="/root/autoinst.xml"
 
 # Expected sections to be present in autoinst.xml
-EXPECTED=(add-on bootloader ca_mgm deploy_image firewall general groups host \
-  kdump keyboard language login_settings networking ntp-client partitioning \
-  printer proxy report services-manager software timezone user_defaults users\
+# FIXME: these sections have been intentionally removed until
+# storage-ng is merged into master: add-on, ca_mgm, firewall,
+# kdump, ntp-client and printer.
+EXPECTED=(bootloader deploy_image general groups host \
+  keyboard language login_settings networking partitioning \
+  proxy report services-manager software timezone user_defaults users\
   ssh_import)
 
 # Install xmlstartlet if it is not already available
