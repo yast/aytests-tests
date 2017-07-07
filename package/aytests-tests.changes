@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri Jul  7 12:58:25 UTC 2017 - igonzalezsosa@suse.com
+
+- Add a test to check RAID based installation with storage-ng
+  (fate#318196)
+- 1.2.3
+
+-------------------------------------------------------------------
 Wed Jul  5 10:49:22 UTC 2017 - igonzalezsosa@suse.com
 
 - Add a test for checking that all sections are included when
