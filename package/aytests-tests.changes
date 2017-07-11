@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Jul 11 09:44:17 CEST 2017 - schubi@suse.de
+
+- Added testcase for ftp server (bnc#1047232)
+- 1.1.13
+
+-------------------------------------------------------------------
 Fri Jun 30 14:47:15 CEST 2017 - schubi@suse.de
 
 - DNS entry will not be generated in the first installation stage.
