@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Jul 11 09:44:17 CEST 2017 - schubi@suse.de
+
+- Added testcase for ftp server (bnc#1047232)
+- 1.2.3
+
+-------------------------------------------------------------------
 Wed Jul  5 10:49:22 UTC 2017 - igonzalezsosa@suse.com
 
 - Add a test for checking that all sections are included when
