@@ -2,6 +2,13 @@
 Tue Jul 11 09:44:17 CEST 2017 - schubi@suse.de
 
 - Added testcase for ftp server (bnc#1047232)
+- 1.2.4
+
+-------------------------------------------------------------------
+Fri Jul  7 12:58:25 UTC 2017 - igonzalezsosa@suse.com
+
+- Add a test to check RAID based installation with storage-ng
+  (fate#318196)
 - 1.2.3
 
 -------------------------------------------------------------------

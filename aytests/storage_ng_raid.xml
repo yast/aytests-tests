@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<!DOCTYPE profile>
+<profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+  <general>
+    <storage>
+      <!-- Override settings from control file -->
+      <try_separate_home config:type="boolean">false</try_separate_home>
+      <proposal_lvm config:type="boolean">true</proposal_lvm>
+    </storage>
+    <mode>
+      <confirm config:type="boolean">false</confirm>
+      <second_stage config:type="boolean">false</second_stage>
+    </mode>
+    <signature-handling>
+      <accept_unknown_gpg_key>
+        <all config:type="boolean">true</all>
+      </accept_unknown_gpg_key>
+    </signature-handling>
+  </general>
+  <add-on>
+    <add_on_products config:type="list">
+      <listentry>
+        <media_url>http://download.opensuse.org/tumbleweed/repo/oss/suse/</media_url>
+        <product>custom</product>
+        <product_dir>/</product_dir>
+        <name>Customized</name>
+        <priority config:type="integer">200</priority>
+        <signature-handling>
+          <accept_unknown_gpg_key>
+            <all config:type="boolean">true</all>
+          </accept_unknown_gpg_key>
+          <accept_unsigned_file>
+            <all config:type="boolean">true</all>
+          </accept_unsigned_file>
+        </signature-handling>
+      </listentry>
+    </add_on_products>
+  </add-on>
+
+  <networking>
+    <dhcp_options>
+      <dhclient_client_id></dhclient_client_id>
+      <dhclient_hostname_option>AUTO</dhclient_hostname_option>
+    </dhcp_options>
+    <dns>
+      <dhcp_hostname config:type="boolean">true</dhcp_hostname>
+      <domain>vagrantup.com</domain>
+      <hostname>vagrant-sles12</hostname>
+      <resolv_conf_policy>auto</resolv_conf_policy>
+      <nameservers config:type="list">
+        <nameserver>10.10.0.100</nameserver>
+      </nameservers>
+      <searchlist config:type="list">
+        <search>vagrantup.com</search>
+      </searchlist>
+      <write_hostname config:type="boolean">true</write_hostname>
+    </dns>
+    <interfaces config:type="list">
+      <interface>
+        <bootproto>dhcp</bootproto>
+        <device>eth0</device>
+        <name>82540EM Gigabit Ethernet Controller</name>
+        <startmode>nfsroot</startmode>
+        <usercontrol>no</usercontrol>
+      </interface>
+    </interfaces>
+  </networking>
+
+  <software>
+    <install_recommended config:type="boolean">false</install_recommended>
+    <patterns config:type="list">
+      <pattern>base</pattern>
+    </patterns>
+    <packages config:type="list">
+      <!-- An SSH server is needed to perform the integration tests -->
+      <package>net-tools</package>
+      <package>zypper</package>
+      <package>openssh</package>
+      <!-- The following packages are needed to run postinstall.sh -->
+      <package>sudo</package>
+      <package>curl</package>
+      <package>ca-certificates-mozilla</package>
+      <!-- Workaround about missing glibc-locale -->
+      <package>glibc-locale</package>
+      <package>yast2-network</package>
+      <!-- AutoYaST2 to clone the system -->
+      <package>autoyast2</package>
+    </packages>
+  </software>
+
+  <users config:type="list">
+    <user>
+      <encrypted config:type="boolean">false</encrypted>
+      <fullname>vagrant</fullname>
+      <gid>100</gid>
+      <home>/home/vagrant</home>
+      <shell>/bin/bash</shell>
+      <uid>1000</uid>
+      <user_password>nots3cr3t</user_password>
+      <username>vagrant</username>
+    </user>
+    <user>
+      <encrypted config:type="boolean">false</encrypted>
+      <fullname>root</fullname>
+      <gid>0</gid>
+      <home>/root</home>
+      <shell>/bin/bash</shell>
+      <uid>0</uid>
+      <user_password>nots3cr3t</user_password>
+      <username>root</username>
+    </user>
+    <!-- user with uncommon home directory (not in home) (bnc#966867)-->
+    <user>
+      <encrypted config:type="boolean">false</encrypted>
+      <fullname>System Admin Emergency Login</fullname>
+      <gid>999</gid>
+      <home>/admin</home>
+      <password_settings>
+        <expire></expire>
+        <flag></flag>
+        <inact></inact>
+        <max></max>
+        <min></min>
+        <warn></warn>
+      </password_settings>
+      <shell>/bin/bash</shell>
+      <uid>999</uid>
+      <groups></groups>
+      <username>sysadm</username>
+      <user_password>testeradmin</user_password>
+    </user>
+  </users>
+
+  <partitioning config:type="list">
+    <drive>
+     <device>/dev/vda</device>
+     <initialize config:type="boolean">true</initialize>
+     <partitions config:type="list">
+       <partition>
+         <create config:type="boolean">true</create>
+         <filesystem config:type="symbol">ext4</filesystem>
+         <mount>/</mount>
+         <size>5GB</size>
+       </partition>
+
+       <!-- first partition for raid -->
+       <partition>
+         <create config:type="boolean">true</create>
+         <raid_name>/dev/md/home</raid_name>
+         <partition_type>primary</partition_type>
+         <partition_id config:type="integer">253</partition_id>
+         <size>5GB</size>
+       </partition>
+
+       <!-- second partition for raid -->
+       <partition>
+         <create config:type="boolean">true</create>
+         <raid_name>/dev/md/home</raid_name>
+         <partition_type>primary</partition_type>
+         <partition_id config:type="integer">253</partition_id>
+         <size>5GB</size>
+       </partition>
+     </partitions>
+     <use>all</use>
+    </drive>
+
+    <!-- RAID definition -->
+    <drive>
+      <device>/dev/md</device>
+      <type config:type="symbol">CT_MD</type>
+      <partitions config:type="list">
+        <partition>
+          <filesystem config:type="symbol">xfs</filesystem>
+          <mount>/home</mount>
+          <partition_nr config:type="integer">0</partition_nr>
+          <raid_options>
+            <raid_name>/dev/md/home</raid_name>
+            <raid_type>raid1</raid_type>
+          </raid_options>
+        </partition>
+      </partitions>
+    </drive>
+  </partitioning>
+
+  <scripts>
+    <chroot-scripts config:type="list">
+      <script>
+        <chrooted config:type="boolean">true</chrooted>
+        <filename>enable-ssh-service.sh</filename>
+        <interpreter>shell</interpreter>
+        <source><![CDATA[
+#!/bin/sh
+/usr/bin/systemctl enable sshd.service
+  ]]>
+        </source>
+      </script>
+    </chroot-scripts>
+  </scripts>
+</profile>
