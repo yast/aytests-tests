@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Jul 17 16:59:22 CEST 2017 - schubi@suse.de
+
+- Added syslinux to package selection of sles12 test.
+  This is needed for kdump/bootmanager in second stage.
+- 1.1.14
+
+-------------------------------------------------------------------
 Tue Jul 11 09:44:17 CEST 2017 - schubi@suse.de
 
 - Added testcase for ftp server (bnc#1047232)
