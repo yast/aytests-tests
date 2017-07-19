@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Jul 19 16:10:33 CEST 2017 - schubi@suse.de
+
+- Added testcase for bnc#1037727 and bnc#1038717.
+  (udev rules with 2 network devices)
+- 1.0.50
+
+-------------------------------------------------------------------
 Wed May 17 10:36:21 CEST 2017 - schubi@suse.de
 
 - Fixed different bugs for SLES12-SP2 run.
