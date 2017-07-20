@@ -730,6 +730,7 @@ ls -l /mnt/$BASE
       <!-- The following packages are needed to run postinstall.sh -->
       <package>sudo</package>
       <package>ca-certificates-mozilla</package>
+      <package>syslinux</package>
     </packages>
   </software>
   <users config:type="list">
