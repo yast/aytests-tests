@@ -797,6 +797,7 @@ ls -l /mnt/$BASE
       <package>xinetd</package>
       <package>tftp</package>
       <package>bind</package>
+      <package>syslinux</package>
       <package>SuSEfirewall2</package>
     </packages>
     <post-packages config:type="list">
