@@ -1,0 +1,5 @@
+user.sh                  # vagrant user has been created
+no_yast2_packages.sh     # YaST2 packages are not installed
+no_second_stage.sh       # second stage was not run
+routing_setup.sh         # Routing config written as expected
+set_passwords.sh         # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)

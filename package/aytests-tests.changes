@@ -1,8 +1,9 @@
 -------------------------------------------------------------------
 Fri Jul 21 10:33:18 UTC 2017 - mfilka@suse.com
 
-- Test for configuring DNS when running first stage only
-- Bumping version since the feature is SLE-15 only
+- Tests for running first stage only
+  - configuring DNS
+  - configuring Routing
 - 1.2.6
 
 -------------------------------------------------------------------
