@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Jul 24 12:40:11 UTC 2017 - igonzalezsosa@suse.com
+
+- Add a test for Btrfs subvolumes support in storage-ng
+  (bsc#1044697).
+- 1.2.7
+
+-------------------------------------------------------------------
 Fri Jul 21 10:33:18 UTC 2017 - mfilka@suse.com
 
 - Tests for running first stage only
