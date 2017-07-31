@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Jul 31 12:37:54 UTC 2017 - knut.anderssen@suse.com
+
+- Check that default host entries are not removed from /etc/hosts
+  (bsc#1039851)
+- 1.2.7
+
+-------------------------------------------------------------------
 Fri Jul 21 10:33:18 UTC 2017 - mfilka@suse.com
 
 - Tests for running first stage only
