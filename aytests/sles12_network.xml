@@ -638,6 +638,29 @@ ls -l /mnt/$BASE
       </rule>
     </net-udev>
   </networking>
+  <host>
+    <hosts config:type="list">
+      <hosts_entry>
+        <host_address>127.0.0.1</host_address>
+        <names config:type="list">
+          <name>localhost</name>
+        </names>
+      </hosts_entry>
+      <hosts_entry>
+        <host_address>1.1.1.1</host_address>
+        <names config:type="list">
+          <name>h063uz.pnet.ch h063uz</name>
+        </names>
+      </hosts_entry>
+      <hosts_entry>
+        <host_address>2.2.2.2</host_address>
+        <names config:type="list">
+          <name>sle15.suse.de</name>
+          <name>sle13.suse.de</name>
+        </names>
+      </hosts_entry>
+    </hosts>
+  </host>
   <tftp-server>
     <start_tftpd config:type="boolean">true</start_tftpd>
     <tftp_directory>/srv/tftpboot</tftp_directory>

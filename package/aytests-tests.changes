@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Jul 31 12:37:54 UTC 2017 - knut.anderssen@suse.com
+
+- Check that default host entries are not removed from /etc/hosts
+  (bsc#1039851)
+- 1.1.16
+
+-------------------------------------------------------------------
 Wed Jul 19 10:22:21 CEST 2017 - schubi@suse.de
 
 - Added syslinux to package selection of sles12_network test.
