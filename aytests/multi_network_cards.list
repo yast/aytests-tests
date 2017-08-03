@@ -1,0 +1,8 @@
+user.sh                        # vagrant user has been created
+root.sh                        # root hast /root home (bnc#878427)
+autoinst-userscr.sh            # user scripts have been run
+no_registration.sh             # registration is not in autoinst.xml (bnc#888168)
+ntp_sync.sh                    # ntp time syncing has been passed (bnc#935066)
+no_reinstall.sh                # do no reinstall packages in second stage (fate#319086)
+set_passwords.sh               # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
+udev.sh                        # udev rules were set as expected

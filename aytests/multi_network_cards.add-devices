@@ -1,0 +1,7 @@
+# Adding additional network device to the standard image
+:libvirt:
+ :network:
+   - "mac=52:54:00:5c:0d:86,source=default,model=virtio,address.type=pci,address.domain=0x0000,address.bus=0x00,address.slot=0x06,address.function=0x0,type=network"
+:virtualbox:
+ :network:
+   - "--macaddress2 5254005c0d86 --nic2 nat"
