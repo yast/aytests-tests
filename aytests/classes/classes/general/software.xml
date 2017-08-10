@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE profile>
+<profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+  <software>
+    <install_recommended config:type="boolean">false</install_recommended>
+    <patterns config:type="list">
+      <pattern>Minimal</pattern>
+    </patterns>
+    <packages config:type="list">
+      <!-- An SSH server is needed to perform the integration tests -->
+      <package>openssh</package>
+      <!-- The following packages are needed to run postinstall.sh -->
+      <package>sudo</package>
+      <package>curl</package>
+      <package>ca-certificates-mozilla</package>
+      <!-- Workaround about missing glibc-locale -->
+      <package>glibc-locale</package>
+    </packages>
+  </software>
+</profile>

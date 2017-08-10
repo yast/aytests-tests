@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Aug 10 11:22:57 CEST 2017 - schubi@suse.de
+
+- Added testcase for classes. (bnc#1051483)
+- 1.1.17
+
+-------------------------------------------------------------------
 Mon Jul 31 12:37:54 UTC 2017 - knut.anderssen@suse.com
 
 - Check that default host entries are not removed from /etc/hosts
