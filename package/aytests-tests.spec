@@ -17,7 +17,7 @@
 
 
 Name:           aytests-tests
-Version:        1.2.7
+Version:        1.2.8
 Release:        0
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
@@ -30,8 +30,13 @@ License:        GPL-3.0
 Group:          System/YaST
 Url:            https://github.com/yast/aytests-tests
 
+<<<<<<< HEAD
 # Depends on the ability to add new devices via the .add-devices files.
 Recommends:     aytests >= 1.0.49
+=======
+# Depends on defining classes/rules in an own directory.
+Recommends:     rubygem-aytests >= 1.0.53
+>>>>>>> SLE-12-SP3
 
 %description
 Profiles and test scripts for AutoYaST2 integration tests.

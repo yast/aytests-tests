@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE profile>
+<profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+  <networking>
+    <keep_install_network config:type="boolean">true</keep_install_network>
+    <net-udev config:type="list">
+      <rule>
+        <name>coolname</name>
+        <rule>ATTR{address}</rule>
+        <value>{{MAC1}}</value>
+      </rule>
+    </net-udev>
+  </networking>
+</profile>

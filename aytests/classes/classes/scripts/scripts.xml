@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE profile>
+<profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+  <scripts>
+    <!-- Ignoring empty scripts. bnc#986049 -->
+    <pre-scripts config:type="list">
+      <script>
+      </script>
+    </pre-scripts>
+    <chroot-scripts config:type="list">
+      <script>
+        <chrooted config:type="boolean">true</chrooted>
+        <filename>enable-ssh-service.sh</filename>
+        <interpreter>shell</interpreter>
+        <source><![CDATA[
+#!/bin/sh
+/usr/bin/systemctl enable sshd.service
+  ]]>
+        </source>
+      </script>
+    </chroot-scripts>
+  </scripts>
+</profile>
