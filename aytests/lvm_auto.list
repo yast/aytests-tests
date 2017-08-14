@@ -2,3 +2,4 @@ lvm.sh                   # creates lvm partitions
 lvm_auto.sh              # switching auto to max option (bnc#962238)
 ca_mgm.sh                # checking ca-management error (bnc#962328)
 set_passwords.sh         # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
+keyboard.sh              # sets default keyboard (bnc#891808)
