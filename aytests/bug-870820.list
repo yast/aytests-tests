@@ -1,0 +1,1 @@
+bug-870820.sh                # Verify that  linuxrc creates ifcfg-INTERFACE files (bsc#870820)
