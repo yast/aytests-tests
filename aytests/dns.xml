@@ -782,14 +782,12 @@
     <image/>
     <instsource/>
     <patterns config:type="list">
-      <pattern>32bit</pattern>
       <pattern>Minimal</pattern>
-      <pattern>apparmor</pattern>
       <pattern>base</pattern>
-      <pattern>documentation</pattern>
     </patterns>
     <packages config:type="list">
       <package>bind</package>
+      <package>sudo</package>
    </packages>
   </software>
   <suse_register>
@@ -1143,4 +1141,19 @@
       <username>wwwrun</username>
     </user>
   </users>
+
+  <scripts>
+    <init-scripts config:type="list">
+      <script>
+        <filename>init_ssh.sh</filename>
+        <chrooted config:type="boolean">true</chrooted>
+        <interpreter>shell</interpreter>
+        <source><![CDATA[
+  chkconfig sshd on
+  rcsshd start
+]]></source>
+      </script>
+    </init-scripts>
+  </scripts>
+
 </profile>

@@ -26,4 +26,3 @@ authorized_keys.sh             # check that authorized_keys were added (FATE#319
 btrfs_set_subvol_default_name.sh  # default subvolume name is set (FATE#317775)
 btrfs_copy_on_write_subvolumes.sh # Set copy-on-write options in Btrfs subvolumes (FATE#320342)
 disk_shrinking.sh              # Report shrinked partitions if there is not enough space. (bnc##1039528)
-locale.sh                      # Set locale accordingly to the profile (bsc#1023774)

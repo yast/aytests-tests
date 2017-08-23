@@ -34,7 +34,17 @@
     <mouse>
       <id>probe</id>
     </mouse>
-    <signature-handling/>
+    <signature-handling>
+      <accept_unknown_gpg_key>
+        <all config:type="boolean">true</all>
+      </accept_unknown_gpg_key>
+      <accept_unsigned_file>
+         <all config:type="boolean">true</all>
+      </accept_unsigned_file>
+      <accept_file_without_checksum>
+         <all config:type="boolean">true</all>
+      </accept_file_without_checksum>
+    </signature-handling>
   </general>
   <!-- }}} -->
   <!-- Inetd {{{ -->
@@ -172,17 +182,17 @@
     <errors>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">700</timeout>
+      <timeout config:type="integer">5</timeout>
     </errors>
     <messages>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">700</timeout>
+      <timeout config:type="integer">5</timeout>
     </messages>
     <warnings>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">700</timeout>
+      <timeout config:type="integer">5</timeout>
     </warnings>
     <yesno_messages>
       <log config:type="boolean">true</log>
@@ -256,6 +266,8 @@
       <package>ipmitool</package>
       <package>kdump</package>
       <package>yast2-kdump</package>
+      <package>sudo</package>
+      <package>SuSEfirewall2</package>
     </packages>
   </software>
   <!-- }}} -->

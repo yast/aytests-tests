@@ -94,6 +94,12 @@
       <accept_unknown_gpg_key>
         <all config:type="boolean">true</all>
       </accept_unknown_gpg_key>
+      <accept_unsigned_file>
+         <all config:type="boolean">true</all>
+      </accept_unsigned_file>
+      <accept_file_without_checksum>
+         <all config:type="boolean">true</all>
+      </accept_file_without_checksum>
     </signature-handling>
   </general>
 
@@ -758,7 +764,6 @@ ls -l /mnt/$BASE
       <package>e2fsprogs</package>
       <package>elfutils</package>
       <package>filesystem</package>
-      <package>gcc</package>
       <package>glibc</package>
       <package>grub2</package>
       <package>initviocons</package>
@@ -799,6 +804,12 @@ ls -l /mnt/$BASE
       <package>bind</package>
       <package>syslinux</package>
       <package>SuSEfirewall2</package>
+      <package>yast2-ftp-server</package>
+      <package>yast2-firewall</package>
+      <package>yast2-ntp-client</package>
+      <package>yast2-printer</package>
+      <package>yast2-ca-management</package>
+      <package>xmlstarlet</package>
     </packages>
     <post-packages config:type="list">
       <package>bind</package>

@@ -7,9 +7,12 @@
       <confirm config:type="boolean">false</confirm>
     </mode>
     <signature-handling>
-      <accept_unknown_gpg_key>
-        <all config:type="boolean">true</all>
-      </accept_unknown_gpg_key>
+      <accept_unsigned_file         config:type="boolean">true</accept_unsigned_file>
+      <accept_file_without_checksum config:type="boolean">true</accept_file_without_checksum>
+      <accept_verification_failed   config:type="boolean">true</accept_verification_failed>
+      <accept_unknown_gpg_key       config:type="boolean">true</accept_unknown_gpg_key>
+      <import_gpg_key               config:type="boolean">true</import_gpg_key>
+      <accept_non_trusted_gpg_key   config:type="boolean">true</accept_non_trusted_gpg_key>
     </signature-handling>
   </general>
   <scripts>
@@ -461,7 +464,7 @@ Tmr9shvqBQKa2NyWfUBcct9hvmlrZD6fnc9a4+3nTxv3TJRwxBUc9Q==
       <pattern>base</pattern>
     </patterns>
     <packages config:type="list">
-      <package>mc</package>
+      <package>sudo</package>
       <package>apache2</package>
       <package>apache2-prefork</package>
       <package>SuSEfirewall2</package>

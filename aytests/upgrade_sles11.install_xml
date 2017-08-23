@@ -574,7 +574,6 @@ ls -l /mnt/$BASE
       <package>e2fsprogs</package>
       <package>elfutils</package>
       <package>filesystem</package>
-      <package>gcc</package>
       <package>glibc</package>
       <package>initviocons</package>
       <package>insserv</package>
