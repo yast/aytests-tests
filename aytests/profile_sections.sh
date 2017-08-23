@@ -10,9 +10,6 @@ EXPECTED=(add-on bootloader ca_mgm deploy_image firewall general groups host \
   printer proxy report services-manager software timezone user_defaults users\
   ssh_import)
 
-# Install xmlstartlet if it is not already available
-rpm -qi xmlstarlet || zypper --non-interactive in xmlstarlet
-
 # Current present sections in autoinst.xml
 readarray -t PRESENT < <(xmlstarlet sel -N 'yast2ns=http://www.suse.com/1.0/yast2ns' --template -match "//yast2ns:profile/*" --value-of "name()" --nl $AUTOINST)
 

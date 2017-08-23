@@ -7,9 +7,12 @@
       <confirm config:type="boolean">false</confirm>
     </mode>
     <signature-handling>
-      <accept_unknown_gpg_key>
-        <all config:type="boolean">true</all>
-      </accept_unknown_gpg_key>
+      <accept_unsigned_file         config:type="boolean">true</accept_unsigned_file>
+      <accept_file_without_checksum config:type="boolean">true</accept_file_without_checksum>
+      <accept_verification_failed   config:type="boolean">true</accept_verification_failed>
+      <accept_unknown_gpg_key       config:type="boolean">true</accept_unknown_gpg_key>
+      <import_gpg_key               config:type="boolean">true</import_gpg_key>
+      <accept_non_trusted_gpg_key   config:type="boolean">true</accept_non_trusted_gpg_key>
     </signature-handling>
   </general>
   <scripts>
@@ -131,7 +134,9 @@ mv /var/run/zypp.sav /var/run/zypp.pid
       <pattern>base</pattern>
     </patterns>
     <packages config:type="list">
-      <package>mc</package>
+      <package>sudo</package>
+      <package>yast2-ntp-client</package>
+      <package>ntp</package>
       <package>apache2</package>
       <package>apache2-prefork</package>
     </packages>
