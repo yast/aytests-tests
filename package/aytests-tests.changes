@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri Sep 22 08:06:15 UTC 2017 - knut.anderssen@suse.com
+
+- Check that /etc/hosts is not blanked out if there is no <host>
+  section defined in the profile (bsc#1058396)
+- 1.1.18
+
+-------------------------------------------------------------------
 Thu Aug 10 11:22:57 CEST 2017 - schubi@suse.de
 
 - Added testcase for classes. (bnc#1051483)
