@@ -1,0 +1,8 @@
+user.sh                        # vagrant user has been created
+root.sh                        # root hast /root home (bnc#878427)
+ntp_sync.sh                    # ntp time syncing has been passed (bnc#935066)
+restart_services.sh            # do no restart dbus and wickedd* services (bsc#944349)
+udev_net_rules.sh              # Check udev network rules were written (bsc#956605)
+set_passwords.sh               # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
+no_release_notes.sh            # release notes are not downloaded for AY (bsc#1009276)
+hosts_setup.sh                 # /etc/hosts updated according the profile
