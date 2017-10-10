@@ -1,4 +1,17 @@
 -------------------------------------------------------------------
+Tue Oct 10 14:13:39 CEST 2017 - schubi@suse.de
+
+- The user has defined that no subvolumes will be created.
+  (bnc#1059617)
+- 1.2.9
+
+-------------------------------------------------------------------
+Fri Sep 22 08:06:15 UTC 2017 - knut.anderssen@suse.com
+
+- Check that /etc/hosts is not blanked out if there is no <host>
+  section defined in the profile (bsc#1058396)
+
+-------------------------------------------------------------------
 Thu Aug 10 11:22:57 CEST 2017 - schubi@suse.de
 
 - Added testcase for classes. (bnc#1051483)
