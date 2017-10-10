@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Oct 10 14:13:39 CEST 2017 - schubi@suse.de
+
+- The user has defined that no subvolumes will be created.
+  (bnc#1059617)
+- 1.1.19
+
+-------------------------------------------------------------------
 Fri Sep 22 08:06:15 UTC 2017 - knut.anderssen@suse.com
 
 - Check that /etc/hosts is not blanked out if there is no <host>

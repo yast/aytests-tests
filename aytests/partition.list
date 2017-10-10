@@ -1,3 +1,4 @@
-user.sh          # vagrant user has been created
-partition.sh     # partition_id order fits (bnc#941096)
-set_passwords.sh # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
+user.sh                    # vagrant user has been created
+partition.sh               # partition_id order fits (bnc#941096)
+set_passwords.sh           # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
+btrfs_no_default_subvol.sh # No subvolumes will be created (bnc#1059617)
