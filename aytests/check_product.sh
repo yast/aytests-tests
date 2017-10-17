@@ -2,4 +2,6 @@
 
 set -e -x
 
-[[ rpm -qf /etc/os-release =~ sled.* ]]
+[[ $(rpm -qf /etc/os-release) =~ sles.* ]]
+
+echo "AUTOYAST OK"

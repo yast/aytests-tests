@@ -2,25 +2,26 @@
 <!DOCTYPE profile>
 <profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
   <general>
+    <signature-handling>
+      <accept_unknown_gpg_key> <all config:type="boolean">true</all> </accept_unknown_gpg_key>
+      <accept_unsigned_file> <all config:type="boolean">true</all> </accept_unsigned_file>
+      <accept_file_without_checksum> <all config:type="boolean">true</all> </accept_file_without_checksum>
+    </signature-handling>
+
     <mode>
       <confirm config:type="boolean">false</confirm>
       <second_stage config:type="boolean">false</second_stage>
     </mode>
-    <signature-handling>
-      <accept_unknown_gpg_key>
-        <all config:type="boolean">true</all>
-      </accept_unknown_gpg_key>
-      <accept_unsigned_file>
-         <all config:type="boolean">true</all>
-      </accept_unsigned_file>
-      <accept_file_without_checksum>
-         <all config:type="boolean">true</all>
-      </accept_file_without_checksum>
-    </signature-handling>
   </general>
 
   <software>
-    <product>SLED15</product>
+    <products config:type="list">
+      <product>SLES15</product>
+    </products>
+    <packages  config:type="list">
+      <package>curl</package>
+      <package>sudo</package>
+    </packages>
   </software>
 
   <suse_register>
