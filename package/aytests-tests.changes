@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Tue Nov  7 09:01:00 UTC 2017 - mfilka@suse.com
+
+- fate#323450
+  - SLE-15 only. Test for product selection in autoinstallation
+    according to the AY profile.
+- 1.3.0
+
+-------------------------------------------------------------------
 Tue Oct 10 14:13:39 CEST 2017 - schubi@suse.de
 
 - The user has defined that no subvolumes will be created.
