@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Nov 28 11:21:04 UTC 2017 - knut.anderssen@suse.com
+
+- Check that ssh authorized keys for root are written and exported
+  correctly (bsc#1066342)
+- 1.1.20
+
+-------------------------------------------------------------------
 Tue Oct 10 14:13:39 CEST 2017 - schubi@suse.de
 
 - The user has defined that no subvolumes will be created.
