@@ -21,8 +21,8 @@ test "$STAT" == "$USER 600"
 
 # Check root ssh authorized keys content
 grep "root@localhost.net" $ROOT_AUTHORIZED_KEYS
-ROOT_KEYS=`wc -l $ROOT_AUTHORIZED_KEYS | cut -f1 -d " "`
-test $ROOT_KEYS -eq 1
+# Vagrant adds its own key and it is present when the test run
+test $ROOT_KEYS -eq 2
 
 # Check root ssh authorized keys owner and permissios
 STAT=`stat -c '%U %a' $ROOT_AUTHORIZED_KEYS`
