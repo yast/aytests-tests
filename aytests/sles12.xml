@@ -872,6 +872,10 @@ ls -l /mnt/$BASE
       <uid>0</uid>
       <user_password>nots3cr3t</user_password>
       <username>root</username>
+      <authorized_keys config:type="list">
+        <authorized_key>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgGEFlxgUo8jQjYPYI7DUm/tua/tmjGPhCnmqbk855SoHg9xEXLLJZ+bSePnPywDS901bzo0IiAwKky0r3RP6DJJkL0SPcwBlNxIuEq++nRwaGDOdoF5fwr3VXuYcHN02AARmUeb2WI4m7KNm6yG9MQOjKhmqYQDRbO65GuLEMA8fKaxMN5VyFqXIqVgXIhNv7z0NEUz31PUSaGywjqVlrSO/GLdY8xd8n4Aw/QL1xE3z1rZqfA0qRLnshHa+sZBALOxEmrbJdskBEreCA2krwCKI1hOp9cWASlmMjQbNbOQ3wLD+rs8MDc37zOD/U5LQzVbwF1Bg/ZJzde/lvjKyz root@localhost.net</authorized_key>
+        <authorized_key>non valid root ssh key</authorized_key>
+      </authorized_keys>
     </user>
   </users>
 
