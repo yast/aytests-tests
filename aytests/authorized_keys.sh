@@ -7,7 +7,7 @@ set -e -x
 USER="suse"
 AUTHORIZED_KEYS="/home/$USER/.ssh/authorized_keys"
 PROFILE="/root/autoinst.xml"
-# Check that root ssh authorized keys are written an exported
+# Check that root ssh authorized keys are written and exported
 ROOT_AUTHORIZED_KEYS="/root/.ssh/authorized_keys"
 
 # Check content
