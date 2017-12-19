@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Dec 19 10:29:41 UTC 2017 - igonzalezsosa@suse.com
+
+- Check chrony suport (FATE#323432) and disklabel element handling
+  (bsc#1073307)
+- 1.2.11 
+
+-------------------------------------------------------------------
 Tue Nov 28 11:21:04 UTC 2017 - knut.anderssen@suse.com
 
 - Check that ssh authorized keys for root are written and exported
