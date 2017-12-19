@@ -1,1 +1,2 @@
-user.sh # vagrant user has been created
+user.sh            # vagrant user has been created
+chrony.sh          # ntp (FATE#323432)

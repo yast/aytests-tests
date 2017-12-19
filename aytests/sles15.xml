@@ -88,7 +88,7 @@
         <offline config:type="boolean">true</offline>
       </ntp_server>
     </ntp_servers>
-    <ntp_sync>15</ntp_sync>
+    <ntp_sync>systemd</ntp_sync>
   </ntp-client>
   <report>
     <errors>
