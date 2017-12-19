@@ -4,8 +4,8 @@
   <add-on>
     <add_on_products config:type="list">
       <listentry>
-        <media_url><![CDATA[http://download.suse.de/ibs/SUSE:/SLE-15:/GA/standard/]]></media_url>
-        <alias>sle-15-ga</alias>
+        <media_url><![CDATA[http://dist.suse.de/ibs/SUSE:/SLE-15:/GA/standard/]]></media_url>
+        <product>sle-15-ga</product>
         <product_dir>/</product_dir>
         <name>SLE 15 GA</name>
       </listentry>
@@ -35,12 +35,17 @@
     </storage>
   </general>
   <keyboard>
-    <keymap>german</keymap>
+    <keymap>spanish</keymap>
   </keyboard>
   <language>
     <language>en_US</language>
     <languages/>
   </language>
+  <partitioning>
+    <drive>
+      <disklabel>msdos</disklabel>
+    </drive>
+  </partitioning>
   <networking>
     <dhcp_options>
       <dhclient_client_id/>
