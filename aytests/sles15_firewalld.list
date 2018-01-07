@@ -1,0 +1,2 @@
+user.sh            # vagrant user has been created
+firewalld.sh	   # Firewalld configured with firewalld new profile schema (fate#320794)
