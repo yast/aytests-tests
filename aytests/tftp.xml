@@ -22,6 +22,26 @@
       </accept_unknown_gpg_key>
     </signature-handling>
   </general>
+  <suse_register>
+    <do_registration config:type="boolean">true</do_registration>
+    <email>
+    </email>
+    <reg_code>{{SCC_REGCODE}}</reg_code>
+    <install_updates config:type="boolean">true</install_updates>
+    <reg_server>{{SCC_URL}}</reg_server>
+    <addons config:type="list">
+      <addon>
+        <name>sle-module-basesystem</name>
+        <version>{{VERSION}}</version>
+        <arch>{{ARCH}}</arch>
+      </addon>
+      <addon>
+        <name>sle-module-server-applications</name>
+        <version>{{VERSION}}</version>
+        <arch>{{ARCH}}</arch>
+      </addon>
+    </addons>
+  </suse_register>
   <scripts>
     <init-scripts config:type="list">
       <script>
@@ -97,36 +117,38 @@ chmod 755 /srv/tftpboot
     <errors>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <!-- Error popup of not supported YaST modules must disapper
-        after 10 seconds in order not stopping the installation. Bug 925381 -->
-      <timeout config:type="integer">10</timeout>
+      <timeout config:type="integer">{{MSG_TIMEOUT}}</timeout>
     </errors>
     <messages>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
+      <timeout config:type="integer">{{MSG_TIMEOUT}}</timeout>
     </messages>
     <warnings>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
+      <timeout config:type="integer">{{MSG_TIMEOUT}}</timeout>
     </warnings>
     <yesno_messages>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
+      <timeout config:type="integer">{{MSG_TIMEOUT}}</timeout>
     </yesno_messages>
   </report>
 
   <software>
     <patterns config:type="list">
-      <pattern>Minimal</pattern>
       <pattern>base</pattern>
+      <pattern>basesystem</pattern>
+      <pattern>minimal_base</pattern>
     </patterns>
     <packages config:type="list">
       <package>xinetd</package>
       <package>tftp</package>
     </packages>
+    <products config:type="list">
+      <product>SLES15</product>
+    </products>
   </software>
 
   <tftp-server>
@@ -164,73 +186,6 @@ chmod 755 /srv/tftpboot
 
   <ntp-client>
     <ntp_policy>auto</ntp_policy>
-    <peers config:type="list">
-      <peer>
-        <address>/var/lib/ntp/drift/ntp.drift</address>
-        <comment>
-# Clients from this (example!) subnet have unlimited access, but only if
-# cryptographically authenticated.
-#restrict 192.168.123.0 mask 255.255.255.0 notrust
-
-##
-## Miscellaneous stuff
-##
-
-</comment>
-        <type>driftfile</type>
-      </peer>
-      <peer>
-        <address>/var/log/ntp</address>
-        <comment># path for drift file
-
-</comment>
-        <type>logfile</type>
-      </peer>
-      <peer>
-        <address>/etc/ntp.keys</address>
-        <comment># alternate log file
-# logconfig =syncstatus + sysevents
-# logconfig =all
-
-# statsdir /tmp/                # directory for statistics files
-# filegen peerstats  file peerstats  type day enable
-# filegen loopstats  file loopstats  type day enable
-# filegen clockstats file clockstats type day enable
-
-#
-# Authentication stuff
-#
-</comment>
-        <type>keys</type>
-      </peer>
-      <peer>
-        <address>1</address>
-        <comment># path for keys file
-</comment>
-        <type>trustedkey</type>
-      </peer>
-      <peer>
-        <address>1</address>
-        <comment># define trusted keys
-</comment>
-        <type>requestkey</type>
-      </peer>
-      <peer>
-        <address>1</address>
-        <comment># key (7) for accessing server variables
-</comment>
-        <type>controlkey</type>
-      </peer>
-      <peer>
-        <address>ntp.suse.de</address>
-        <options> iburst</options>
-        <type>server</type>
-      </peer>
-    </peers>
-    <start_at_boot config:type="boolean">true</start_at_boot>
-    <start_in_chroot config:type="boolean">false</start_in_chroot>
-    <sync_interval config:type="integer">5</sync_interval>
-    <synchronize_time config:type="boolean">false</synchronize_time>
   </ntp-client>
 
 </profile>

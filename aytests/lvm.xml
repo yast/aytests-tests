@@ -15,6 +15,26 @@
       <accept_non_trusted_gpg_key   config:type="boolean">true</accept_non_trusted_gpg_key>
     </signature-handling>
   </general>
+  <suse_register>
+    <do_registration config:type="boolean">true</do_registration>
+    <email>
+    </email>
+    <reg_code>{{SCC_REGCODE}}</reg_code>
+    <install_updates config:type="boolean">true</install_updates>
+    <reg_server>{{SCC_URL}}</reg_server>
+    <addons config:type="list">
+      <addon>
+        <name>sle-module-basesystem</name>
+        <version>{{VERSION}}</version>
+        <arch>{{ARCH}}</arch>
+      </addon>
+      <addon>
+        <name>sle-module-server-applications</name>
+        <version>{{VERSION}}</version>
+        <arch>{{ARCH}}</arch>
+      </addon>
+    </addons>
+  </suse_register>
   <scripts>
     <post-scripts config:type="list">
       <script>
@@ -64,22 +84,22 @@ mv /var/run/zypp.sav /var/run/zypp.pid
     <errors>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
+      <timeout config:type="integer">{{MSG_TIMEOUT}}</timeout>
     </errors>
     <messages>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
+      <timeout config:type="integer">{{MSG_TIMEOUT}}</timeout>
     </messages>
     <warnings>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
+      <timeout config:type="integer">{{MSG_TIMEOUT}}</timeout>
     </warnings>
     <yesno_messages>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
+      <timeout config:type="integer">{{MSG_TIMEOUT}}</timeout>
     </yesno_messages>
   </report>
 
@@ -130,8 +150,9 @@ mv /var/run/zypp.sav /var/run/zypp.pid
 
   <software>
     <patterns config:type="list">
-      <pattern>Minimal</pattern>
       <pattern>base</pattern>
+      <pattern>basesystem</pattern>
+      <pattern>minimal_base</pattern>
     </patterns>
     <packages config:type="list">
       <package>sudo</package>
@@ -143,6 +164,9 @@ mv /var/run/zypp.sav /var/run/zypp.pid
     <remove-packages config:type="list">
       <package>zsh</package>
     </remove-packages>
+    <products config:type="list">
+      <product>SLES15</product>
+    </products>
   </software>
 
   <users config:type="list">
