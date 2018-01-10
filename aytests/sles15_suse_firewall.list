@@ -1,0 +1,2 @@
+user.sh            # vagrant user has been created
+suse_firewall.sh   # Firewalld configured with a SuSEFirewall2 profile (fate#320794)
