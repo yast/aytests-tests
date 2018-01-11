@@ -647,7 +647,7 @@ ls -l /mnt/$BASE
     <dns>
       <dhcp_hostname config:type="boolean">true</dhcp_hostname>
       <domain>vagrantup.com</domain>
-      <hostname>vagrant-sles12</hostname>
+      <hostname>vagrant-sles</hostname>
       <resolv_conf_policy>auto</resolv_conf_policy>
       <searchlist config:type="list">
         <search>vagrantup.com</search>
@@ -672,7 +672,7 @@ ls -l /mnt/$BASE
     <drive>
       <device>/dev/vda</device>
       <disklabel>msdos</disklabel>
-      <enable_snapshots config:type="boolean">true</enable_snapshots>
+      <enable_snapshots config:type="boolean">false</enable_snapshots>
       <initialize config:type="boolean">true</initialize>
       <partitions config:type="list">
         <partition>
