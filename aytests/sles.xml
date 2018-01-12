@@ -672,7 +672,7 @@ ls -l /mnt/$BASE
     <drive>
       <device>/dev/vda</device>
       <disklabel>msdos</disklabel>
-      <enable_snapshots config:type="boolean">false</enable_snapshots>
+      <enable_snapshots config:type="boolean">true</enable_snapshots>
       <initialize config:type="boolean">true</initialize>
       <partitions config:type="list">
         <partition>
