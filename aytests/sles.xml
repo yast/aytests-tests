@@ -758,7 +758,6 @@ ls -l /mnt/$BASE
   <software>
     <install_recommended config:type="boolean">false</install_recommended>
     <packages config:type="list">
-      <package>perl-Unix-Syslog</package>
       <package>aaa_base</package>
       <package>bash</package>
       <package>coreutils</package>
