@@ -10,15 +10,15 @@
         <name>Customized</name>
       </listentry>
       <listentry>
-         <media_url>http://dist.suse.de/install/SLP/SLE-15-Module-Basesystem-TEST/x86_64/DVD1/</media_url>
+         <media_url><![CDATA[{{MODULE_BASESYSTEM}}]]></media_url>
          <product>sle-module-basesystem</product>
       </listentry>
       <listentry>
-         <media_url>http://dist.suse.de/install/SLP/SLE-15-Module-Desktop-Applications-TEST/x86_64/DVD1/</media_url>
+         <media_url><![CDATA[{{MODULE_DESKTOP_APPLICATION}}]]></media_url>
          <product>sle-module-desktop-applications</product>
       </listentry>
       <listentry>
-         <media_url>http://dist.suse.de/install/SLP/SLE-15-Module-Server-Applications-TEST/x86_64/DVD1/</media_url>
+         <media_url><![CDATA[{{MODULE_SERVER_APPLICATION}}]]></media_url>
          <product>sle-module-server-applications</product>
       </listentry>
     </add_on_products>
