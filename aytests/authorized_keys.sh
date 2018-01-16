@@ -8,7 +8,7 @@ USER="suse"
 AUTHORIZED_KEYS="/home/$USER/.ssh/authorized_keys"
 PROFILE="/root/autoinst.xml"
 # Check that root ssh authorized keys are written and exported
-ROOT_AUTHORIZED_KEYS="/root/.ssh/authorized_keys"
+ROOT_AUTHORIZED_KEYS="/root/.ssh/authorized_keys.aytests"
 
 # Check content
 grep "vagrant@localhost.net" $AUTHORIZED_KEYS
