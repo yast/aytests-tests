@@ -5,6 +5,6 @@
 
 set -e -x
 
-grep "subvol=@/home" /etc/fstab
+grep "subvol=/@/home" /etc/fstab
 # btrfs_set_default_subvolume_name should not be exported as it's the product's default.
 grep "btrfs_set_default_subvolume_name" /root/autoinst.xml || echo "AUTOYAST OK"
