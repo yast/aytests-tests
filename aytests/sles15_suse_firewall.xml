@@ -16,8 +16,8 @@
   </deploy_image>
   <firewall>
     <FW_DEV_EXT>eth0</FW_DEV_EXT>
+    <FW_DEV_DMZ>any</FW_DEV_DMZ>
     <FW_CONFIGURATIONS_EXT>apache2 apache2-ssl sshd</FW_CONFIGURATIONS_EXT>
-    <FW_CONFIGURATIONS_DMZ>any</FW_CONFIGURATIONS_EXT>
     <FW_SERVICES_EXT_TCP>8080</FW_SERVICES_EXT_TCP>
     <FW_SERVICES_EXT_UDP>9090</FW_SERVICES_EXT_UDP>
     <enable_firewall config:type="boolean">true</enable_firewall>
