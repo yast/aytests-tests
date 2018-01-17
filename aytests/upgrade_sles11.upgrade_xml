@@ -8,29 +8,43 @@
         <product>custom</product>
         <product_dir>/</product_dir>
         <name>Customized</name>
-        <signature-handling>
-          <accept_unknown_gpg_key config:type="boolean">true</accept_unknown_gpg_key>
-          <accept_unsigned_file config:type="boolean">true</accept_unsigned_file>
-        </signature-handling>
+      </listentry>
+      <listentry>
+        <media_url><![CDATA[{{REPO1_URL}}]]></media_url>
+        <product>custom</product>
+        <product_dir>/</product_dir>
+        <name>Customized</name>
+      </listentry>
+      <listentry>
+         <media_url><![CDATA[{{MODULE_BASESYSTEM}}]]></media_url>
+         <product>sle-module-basesystem</product>
+      </listentry>
+      <listentry>
+         <media_url><![CDATA[{{MODULE_DESKTOP_APPLICATION}}]]></media_url>
+         <product>sle-module-desktop-applications</product>
+      </listentry>
+      <listentry>
+         <media_url><![CDATA[{{MODULE_SERVER_APPLICATION}}]]></media_url>
+         <product>sle-module-server-applications</product>
       </listentry>
     </add_on_products>
   </add-on>
+  <!-- test the self-update feature (https://fate.suse.com/319716) -->
+  <self_update_url><![CDATA[{{REPO_SLE12_URL}}]]></self_update_url>
   <general>
     <mode>
       <confirm config:type="boolean">false</confirm>
       <ntp_sync_time_before_installation>ntp.suse.de</ntp_sync_time_before_installation>
     </mode>
-    <!-- test the self-update feature (https://fate.suse.com/319716) -->
-    <self_update_url><![CDATA[{{REPO_SLE12_URL}}]]></self_update_url>
     <signature-handling>
-      <!-- the testing self-update repository is not signed -->
       <accept_unsigned_file config:type="boolean">true</accept_unsigned_file>
+      <accept_file_without_checksum config:type="boolean">true</accept_file_without_checksum>
+      <accept_verification_failed config:type="boolean">true</accept_verification_failed>
+      <accept_unknown_gpg_key config:type="boolean">true</accept_unknown_gpg_key>
+      <accept_non_trusted_gpg_key config:type="boolean">true</accept_non_trusted_gpg_key>
+      <import_gpg_key config:type="boolean">true</import_gpg_key>
     </signature-handling>
   </general>
-
-  <firewall>
-    <FW_SERVICES_EXT_TCP>8080</FW_SERVICES_EXT_TCP>
-  </firewall>
 
   <scripts>
 
@@ -207,6 +221,13 @@ zypper rr Customized
       <timeout config:type="integer">0</timeout>
     </yesno_messages>
   </report>
+
+  <software>
+    <products config:type="list">
+      <listentry>SLES15</listentry>
+    </products>
+  </software>
+
   <users config:type="list">
     <user>
       <encrypted config:type="boolean">false</encrypted>
