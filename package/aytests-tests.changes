@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Jan 17 17:11:29 UTC 2018 - knut.anderssen@suse.com
+
+- Fixed SuSEFirewall2 based profile (fate#323460)
+- 1.2.16
+
+-------------------------------------------------------------------
 Wed Jan 17 15:39:04 CET 2018 - schubi@suse.de
 
 - Adapting upgrade to SLES15.
