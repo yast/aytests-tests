@@ -250,6 +250,12 @@ touch /rebootflag
 ls -l $BASE
 mv $BASE /mnt/$BASE
 ls -l /mnt/$BASE
+# While installation some files will be copied to system by the
+# user vagrant. The pam module pam_nologin is blocking these scp
+# calls because it does not allow login while installation by a
+# none root user. So we are disabling pam_nologin while calling the
+# second stage.
+sed -i.bak '/pam_nologin/d' /mnt/etc/pam.d/sshd
         ]]></source>
       <chrooted config:type="boolean">false</chrooted>
 
