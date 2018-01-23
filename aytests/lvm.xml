@@ -140,11 +140,6 @@ mv /var/run/zypp.sav /var/run/zypp.pid
     </remove-packages>
   </software>
 
-  <language>
-    <language>de_DE</language>
-    <languages>de_DE</languages>
-  </language>
-
   <users config:type="list">
     <user>
       <encrypted config:type="boolean">false</encrypted>
