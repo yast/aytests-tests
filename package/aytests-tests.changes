@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Jan 22 17:09:14 CET 2018 - schubi@suse.de
+
+- Disabling pam_nologin while installing an image.
+- 1.2.17
+
+-------------------------------------------------------------------
 Wed Jan 17 17:11:29 UTC 2018 - knut.anderssen@suse.com
 
 - Fixed SuSEFirewall2 based profile (fate#323460)
