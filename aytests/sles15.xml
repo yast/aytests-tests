@@ -4,10 +4,10 @@
   <add-on>
     <add_on_products config:type="list">
       <listentry>
-        <media_url><![CDATA[http://dist.suse.de/ibs/SUSE:/SLE-15:/GA/standard/]]></media_url>
-        <product>sle-15-ga</product>
+        <media_url><![CDATA[{{SLE_GA}}]]></media_url>
+        <product>sle-ga</product>
         <product_dir>/</product_dir>
-        <name>SLE 15 GA</name>
+        <name>SLE GA</name>
       </listentry>
     </add_on_products>
   </add-on>
@@ -27,7 +27,7 @@
       <accept_non_trusted_gpg_key config:type="boolean">true</accept_non_trusted_gpg_key>
       <accept_unknown_gpg_key config:type="boolean">true</accept_unknown_gpg_key>
       <accept_unsigned_file config:type="boolean">true</accept_unsigned_file>
-      <accept_verification_failed config:type="boolean">false</accept_verification_failed>
+      <accept_verification_failed config:type="boolean">true</accept_verification_failed>
       <import_gpg_key config:type="boolean">true</import_gpg_key>
     </signature-handling>
     <storage>

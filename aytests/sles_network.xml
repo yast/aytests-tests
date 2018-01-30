@@ -20,6 +20,12 @@
           <accept_verification_failed config:type="boolean">true</accept_verification_failed>
         </signature-handling>
       </listentry>
+      <listentry>
+        <media_url><![CDATA[{{SLE_GA}}]]></media_url>
+        <product>sle-ga</product>
+        <product_dir>/</product_dir>
+        <name>SLE GA</name>
+      </listentry>
     </add_on_products>
   </add-on>
   <bootloader>
@@ -72,9 +78,12 @@
       <btrfs_set_default_subvolume_name config:type="boolean">false</btrfs_set_default_subvolume_name>
     </storage>
     <signature-handling>
-      <accept_unknown_gpg_key>
-        <all config:type="boolean">true</all>
-      </accept_unknown_gpg_key>
+      <accept_unsigned_file config:type="boolean">true</accept_unsigned_file>
+      <accept_file_without_checksum config:type="boolean">true</accept_file_without_checksum>
+      <accept_verification_failed config:type="boolean">true</accept_verification_failed>
+      <accept_unknown_gpg_key config:type="boolean">true</accept_unknown_gpg_key>
+      <accept_non_trusted_gpg_key config:type="boolean">true</accept_non_trusted_gpg_key>
+      <import_gpg_key config:type="boolean">true</import_gpg_key>
     </signature-handling>
   </general>
 
@@ -725,7 +734,7 @@ ls -l /mnt/$BASE
     <errors>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
+      <timeout config:type="integer">0</timeout>
     </errors>
     <messages>
       <log config:type="boolean">true</log>
@@ -746,9 +755,12 @@ ls -l /mnt/$BASE
   <software>
     <install_recommended config:type="boolean">false</install_recommended>
     <patterns config:type="list">
-      <pattern>Minimal</pattern>
       <pattern>base</pattern>
+      <pattern>minimal_base</pattern>
     </patterns>
+    <products config:type="list">
+      <listentry>SLES15</listentry>
+    </products>
     <packages config:type="list">
       <!-- The following packages are needed to run postinstall.sh -->
       <package>sudo</package>

@@ -775,20 +775,15 @@ sed -i.bak '/pam_nologin/d' /mnt/etc/pam.d/sshd
       <package>glibc</package>
       <package>grub2</package>
       <package>initviocons</package>
-      <package>insserv</package>
       <package>iputils</package>
       <package>kbd</package>
       <package>kernel-default</package>
       <package>less</package>
       <package>libxml2-tools</package>
-      <package>login</package>
-      <package>mkinitrd</package>
-      <package>module-init-tools</package>
       <package>ncurses-utils</package>
       <package>openssh</package>
       <package>pam</package>
       <package>procps</package>
-      <package>pwdutils</package>
       <package>rpcbind</package>
       <package>rpm</package>
       <package>sudo</package>
@@ -796,7 +791,6 @@ sed -i.bak '/pam_nologin/d' /mnt/etc/pam.d/sshd
       <package>tar</package>
       <package>timezone</package>
       <package>vim</package>
-      <package>vim-base</package>
       <package>w3m</package>
       <package>zypper</package>
       <package>rsync</package>
