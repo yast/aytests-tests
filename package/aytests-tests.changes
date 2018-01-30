@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Jan 30 10:43:24 CET 2018 - schubi@suse.de
+
+- Adapting to SLES15.
+- 1.2.18
+
+-------------------------------------------------------------------
 Mon Jan 22 17:09:14 CET 2018 - schubi@suse.de
 
 - Disabling pam_nologin while installing an image.
