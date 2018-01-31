@@ -110,13 +110,13 @@ mv /var/run/zypp.sav /var/run/zypp.pid
             <partition_nr config:type="integer">1</partition_nr>
             <lvm_group>system</lvm_group>
             <partition_type>primary</partition_type>
-            <size>5G</size>
+            <size>250G</size>
           </partition>
           <partition>
             <partition_nr config:type="integer">2</partition_nr>
             <lvm_group>system</lvm_group>
             <partition_type>primary</partition_type>
-            <size>max</size>
+            <size>250G</size>
           </partition>
         </partitions>
         <use>all</use>
@@ -129,12 +129,12 @@ mv /var/run/zypp.sav /var/run/zypp.pid
           <partition>
             <lv_name>root_lv</lv_name>
             <mount>/</mount>
-            <size>3G</size>
+            <size>300G</size>
           </partition>
           <partition>
             <lv_name>opt_lv</lv_name>
             <mount>/opt</mount>
-            <size>max</size>
+            <size>200G</size>
           </partition>
           <partition>
             <filesystem config:type="symbol">swap</filesystem>

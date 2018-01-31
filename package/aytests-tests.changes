@@ -1,7 +1,8 @@
 -------------------------------------------------------------------
 Wed Jan 31 09:02:34 UTC 2018 - igonzalezsosa@suse.com
 
-- Test if partitions are shrinked when needed (bsc#1078418).
+- Test if partitions and logical volumes are shrinked when needed
+  (bsc#1078418).
 - 1.2.20
 
 -------------------------------------------------------------------
