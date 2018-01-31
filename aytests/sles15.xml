@@ -49,7 +49,7 @@
       <partitions config:type="list">
         <partition>
           <filesystem config:type="symbol">ext4</filesystem>
-          <size>max</size>
+          <size>500GiB</size>
           <mount>/</mount>
           <label>root</label>
         </partition>
