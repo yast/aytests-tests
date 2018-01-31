@@ -1,3 +1,4 @@
-user.sh            # vagrant user has been created
-chrony.sh          # ntp (FATE#323432)
-disklabel-msdos.sh # disklabel element support (bsc#1073307)
+user.sh              # vagrant user has been created
+chrony.sh            # ntp (FATE#323432)
+disklabel-msdos.sh   # disklabel element support (bsc#1073307)
+shrink_partitions.sh # shrink partitions (bsc#1078418)
