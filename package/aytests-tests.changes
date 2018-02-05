@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Feb  5 13:29:23 CET 2018 - schubi@suse.de
+
+- Corrected path of jenkins_tests.
+- 1.2.23
+
+-------------------------------------------------------------------
 Mon Feb  5 12:39:36 CET 2018 - schubi@suse.de
 
 - Added file jenkins_tests which contains the name of test cases.
