@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Feb  5 12:39:36 CET 2018 - schubi@suse.de
+
+- Added file jenkins_tests which contains the name of test cases.
+  These tests will be run continuously on the jenkins nodes.
+- 1.2.22
+
+-------------------------------------------------------------------
 Mon Feb  5 11:04:23 CET 2018 - schubi@suse.de
 
 - Adapting sles_network to SLES15.

@@ -1,0 +1,7 @@
+sles.rb
+sles15.rb
+sles15_firewalld.rb
+sles_minimal.rb
+sles_minimal_network.rb
+sles15_firewalld.rb
+sles_network.rb
