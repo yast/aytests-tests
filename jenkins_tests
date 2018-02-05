@@ -3,5 +3,4 @@ aytests/sles15.rb
 aytests/sles15_firewalld.rb
 aytests/sles_minimal.rb
 aytests/sles_minimal_network.rb
-aytests/sles15_firewalld.rb
 aytests/sles_network.rb
