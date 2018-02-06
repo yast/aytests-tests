@@ -20,6 +20,12 @@
           <accept_verification_failed config:type="boolean">true</accept_verification_failed>
         </signature-handling>
       </listentry>
+      <listentry>
+        <media_url><![CDATA[{{SLE_GA}}]]></media_url>
+        <product>sle-ga</product>
+        <product_dir>/</product_dir>
+        <name>SLE GA</name>
+      </listentry>
     </add_on_products>
   </add-on>
   <general>
@@ -28,9 +34,12 @@
       <ntp_sync_time_before_installation>ntp.suse.de</ntp_sync_time_before_installation>
     </mode>
     <signature-handling>
-      <accept_unknown_gpg_key>
-        <all config:type="boolean">true</all>
-      </accept_unknown_gpg_key>
+      <accept_file_without_checksum config:type="boolean">true</accept_file_without_checksum>
+      <accept_non_trusted_gpg_key config:type="boolean">true</accept_non_trusted_gpg_key>
+      <accept_unknown_gpg_key config:type="boolean">true</accept_unknown_gpg_key>
+      <accept_unsigned_file config:type="boolean">true</accept_unsigned_file>
+      <accept_verification_failed config:type="boolean">true</accept_verification_failed>
+      <import_gpg_key config:type="boolean">true</import_gpg_key>
     </signature-handling>
   </general>
   <scripts>
@@ -42,6 +51,12 @@
         <source><![CDATA[
 #!/bin/sh
 /usr/bin/systemctl enable sshd.service
+# While installation some files will be copied to system by the
+# user vagrant. The pam module pam_nologin is blocking these scp
+# calls because it does not allow login while installation by a
+# none root user. So we are disabling pam_nologin while calling the
+# second stage.
+sed -i.bak '/pam_nologin/d' /etc/pam.d/sshd
   ]]>
         </source>
       </script>
@@ -105,7 +120,7 @@
   <software>
     <install_recommended config:type="boolean">false</install_recommended>
     <patterns config:type="list">
-      <pattern>Minimal</pattern>
+      <pattern>minimal_base</pattern>
       <pattern>base</pattern>
     </patterns>
     <packages config:type="list">
@@ -113,7 +128,11 @@
       <package>sudo</package>
       <package>ca-certificates-mozilla</package>
       <package>syslinux</package>
+      <package>iproute2</package>
     </packages>
+    <products config:type="list">
+      <listentry>SLES15</listentry>
+    </products>
   </software>
   <users config:type="list">
     <user>
