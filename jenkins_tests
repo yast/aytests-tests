@@ -5,3 +5,4 @@ aytests/sles_minimal.rb
 aytests/sles_minimal_network.rb
 aytests/sles_network.rb
 aytests/sles_network_without_hosts.rb
+aytests/sles_mini_network.rb
