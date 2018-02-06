@@ -8,3 +8,5 @@ aytests/sles_network_without_hosts.rb
 aytests/sles_mini_network.rb
 aytests/sles_insserv.rb
 aytests/storage_ng_automated_lvm.rb
+aytests/storage_ng_automated_partitioning.rb
+aytests/storage_ng_lvm.rb

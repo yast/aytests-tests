@@ -12,7 +12,7 @@ AUTOINST="/root/autoinst.xml"
 EXPECTED=(bootloader deploy_image general groups host \
   keyboard language login_settings networking partitioning \
   proxy report services-manager software timezone user_defaults users\
-  ssh_import)
+  ssh_import add-on ntp-client)
 
 # Install xmlstartlet if it is not already available
 rpm -qi xmlstarlet || zypper --non-interactive in xmlstarlet
