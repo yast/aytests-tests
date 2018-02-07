@@ -7,11 +7,25 @@
       <second_stage config:type="boolean">false</second_stage>
     </mode>
     <signature-handling>
-      <accept_unknown_gpg_key>
-        <all config:type="boolean">true</all>
-      </accept_unknown_gpg_key>
+      <accept_file_without_checksum config:type="boolean">true</accept_file_without_checksum>
+      <accept_non_trusted_gpg_key config:type="boolean">true</accept_non_trusted_gpg_key>
+      <accept_unknown_gpg_key config:type="boolean">true</accept_unknown_gpg_key>
+      <accept_unsigned_file config:type="boolean">true</accept_unsigned_file>
+      <accept_verification_failed config:type="boolean">true</accept_verification_failed>
+      <import_gpg_key config:type="boolean">true</import_gpg_key>
     </signature-handling>
   </general>
+
+  <add-on>
+    <add_on_products config:type="list">
+      <listentry>
+        <media_url><![CDATA[{{SLE_GA}}]]></media_url>
+        <product>sle-ga</product>
+        <product_dir>/</product_dir>
+        <name>SLE GA</name>
+      </listentry>
+    </add_on_products>
+  </add-on>
 
   <networking>
     <dhcp_options>
@@ -45,7 +59,7 @@
   <software>
     <install_recommended config:type="boolean">false</install_recommended>
     <patterns config:type="list">
-      <pattern>Minimal</pattern>
+      <pattern>minimal_base</pattern>
     </patterns>
     <packages config:type="list">
       <!-- An SSH server is needed to perform the integration tests -->
@@ -57,6 +71,9 @@
       <!-- Workaround about missing glibc-locale -->
       <package>glibc-locale</package>
     </packages>
+    <products config:type="list">
+      <listentry>SLES15</listentry>
+    </products>
   </software>
 
   <users config:type="list">

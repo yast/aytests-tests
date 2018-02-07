@@ -9,33 +9,17 @@
     </storage>
     <mode>
       <confirm config:type="boolean">false</confirm>
-      <second_stage config:type="boolean">false</second_stage>
+      <second_stage config:type="boolean">true</second_stage>
     </mode>
     <signature-handling>
-      <accept_unknown_gpg_key>
-        <all config:type="boolean">true</all>
-      </accept_unknown_gpg_key>
+      <accept_file_without_checksum config:type="boolean">true</accept_file_without_checksum>
+      <accept_non_trusted_gpg_key config:type="boolean">true</accept_non_trusted_gpg_key>
+      <accept_unknown_gpg_key config:type="boolean">true</accept_unknown_gpg_key>
+      <accept_unsigned_file config:type="boolean">true</accept_unsigned_file>
+      <accept_verification_failed config:type="boolean">true</accept_verification_failed>
+      <import_gpg_key config:type="boolean">true</import_gpg_key>
     </signature-handling>
   </general>
-  <add-on>
-    <add_on_products config:type="list">
-      <listentry>
-        <media_url>http://download.opensuse.org/tumbleweed/repo/oss/suse/</media_url>
-        <product>custom</product>
-        <product_dir>/</product_dir>
-        <name>Customized</name>
-        <priority config:type="integer">200</priority>
-        <signature-handling>
-          <accept_unknown_gpg_key>
-            <all config:type="boolean">true</all>
-          </accept_unknown_gpg_key>
-          <accept_unsigned_file>
-            <all config:type="boolean">true</all>
-          </accept_unsigned_file>
-        </signature-handling>
-      </listentry>
-    </add_on_products>
-  </add-on>
 
   <networking>
     <dhcp_options>
@@ -53,11 +37,25 @@
     </interfaces>
   </networking>
 
+  <add-on>
+    <add_on_products config:type="list">
+      <listentry>
+        <media_url><![CDATA[{{SLE_GA}}]]></media_url>
+        <product>sle-ga</product>
+        <product_dir>/</product_dir>
+        <name>SLE GA</name>
+      </listentry>
+    </add_on_products>
+  </add-on>
+
   <software>
     <install_recommended config:type="boolean">false</install_recommended>
     <patterns config:type="list">
-      <pattern>generic_server</pattern>
+      <pattern>minimal_base</pattern>
     </patterns>
+    <products config:type="list">
+      <listentry>SLES15</listentry>
+    </products>
     <packages config:type="list">
       <!-- An SSH server is needed to perform the integration tests -->
       <package>net-tools</package>
@@ -67,8 +65,6 @@
       <package>sudo</package>
       <package>curl</package>
       <package>ca-certificates-mozilla</package>
-      <!-- Workaround about missing glibc-locale -->
-      <package>glibc-locale</package>
       <package>yast2-network</package>
       <!-- AutoYaST2 to clone the system -->
       <package>autoyast2</package>
@@ -139,11 +135,19 @@
         <source><![CDATA[
 #!/bin/sh
 /usr/bin/systemctl enable sshd.service
+# While installation some files will be copied to system by the
+# user vagrant. The pam module pam_nologin is blocking these scp
+# calls because it does not allow login while installation by a
+# none root user. So we are disabling pam_nologin while calling the
+# second stage.
+sed -i.bak '/pam_nologin/d' /etc/pam.d/sshd
   ]]>
         </source>
       </script>
+    </chroot-scripts>
+
+    <post-scripts config:type="list">
       <script>
-        <chrooted config:type="boolean">true</chrooted>
         <filename>yast_clone.sh</filename>
         <interpreter>shell</interpreter>
         <location/>
@@ -155,6 +159,6 @@ yast clone_system
 mv /var/run/zypp.sav /var/run/zypp.pid
         ]]></source>
       </script>
-    </chroot-scripts>
+    </post-scripts>
   </scripts>
 </profile>
