@@ -12,3 +12,4 @@ aytests/storage_ng_automated_partitioning.rb
 aytests/storage_ng_lvm.rb
 aytests/storage_ng_minimal.rb
 aytests/storage_ng_plain_partitions.rb
+aytests/storage_ng_raid.rb
