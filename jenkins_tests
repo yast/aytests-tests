@@ -10,4 +10,5 @@ aytests/sles_insserv.rb
 aytests/storage_ng_automated_lvm.rb
 aytests/storage_ng_automated_partitioning.rb
 aytests/storage_ng_lvm.rb
-aytests/storage_ng_minimal
+aytests/storage_ng_minimal.rb
+aytests/storage_ng_plain_partitions.rb
