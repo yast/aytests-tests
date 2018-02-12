@@ -143,7 +143,6 @@ chmod 755 /srv/tftpboot
       <pattern>minimal_base</pattern>
     </patterns>
     <packages config:type="list">
-      <package>xinetd</package>
       <package>tftp</package>
     </packages>
     <products config:type="list">
