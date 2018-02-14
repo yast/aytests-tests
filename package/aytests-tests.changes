@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Feb 14 09:56:18 UTC 2018 - knut.anderssen@suse.com
+
+- Sort services check for SuSEFirewall2 profiles
+- 1.2.25
+
+-------------------------------------------------------------------
 Tue Feb  6 14:17:25 CET 2018 - schubi@suse.de
 
 - Adapted sles_network_without_hosts, sles_mini_network,
