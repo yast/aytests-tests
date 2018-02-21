@@ -185,6 +185,13 @@ chmod 755 /srv/tftpboot
 
   <ntp-client>
     <ntp_policy>auto</ntp_policy>
+    <ntp_servers config:type="list">
+        <ntp_server>
+            <address>ntp.suse.de</address>
+            <iburst config:type="boolean">true</iburst>
+            <offline config:type="boolean">false</offline>
+        </ntp_server>
+    </ntp_servers>
   </ntp-client>
 
 </profile>
