@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Feb 22 12:17:07 UTC 2018 - riafarov@suse.com
+
+- Adjust tftp test for chrony
+- 1.2.27
+
+-------------------------------------------------------------------
 Thu Feb 22 09:58:17 UTC 2018 - igonzalezsosa@suse.com
 
 - Test whether AutoYaST is able to determine the proper filesystem

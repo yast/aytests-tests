@@ -2,6 +2,6 @@
 
 set -e -x
 
-grep "server ntp.suse.de iburst" /etc/ntp.conf
-grep "driftfile /var/lib/ntp/drift/ntp.drift" /etc/ntp.conf
+grep "pool ntp.suse.de iburst" /etc/chrony.conf
+grep "driftfile /var/lib/chrony/drift" /etc/chrony.conf
 echo "AUTOYAST OK"
