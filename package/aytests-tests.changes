@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Feb 28 12:39:39 UTC 2018 - riafarov@suse.com
+
+- Adjust lvm ay test for ntp and firewall changes
+- 1.2.28
+
+-------------------------------------------------------------------
 Wed Feb 22 12:17:07 UTC 2018 - riafarov@suse.com
 
 - Adjust tftp test for chrony
