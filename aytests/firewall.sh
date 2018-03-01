@@ -2,5 +2,7 @@
 
 set -e -x
 
-grep "FW_CONFIGURATIONS_EXT=\"apache2 apache2-ssl\"" /etc/sysconfig/SuSEfirewall2
+SERVICES=`firewall-offline-cmd --zone=external --list-services`
+test "$SERVICES" == 'http https' || echo 'Services are not configured properly, expected http https'
+
 echo "AUTOYAST OK"
