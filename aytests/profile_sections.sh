@@ -5,7 +5,7 @@ set -x
 AUTOINST="/root/autoinst.xml"
 
 # Expected sections to be present in autoinst.xml
-EXPECTED=(add-on bootloader ca_mgm deploy_image general groups host \
+EXPECTED=(add-on bootloader tftp-server deploy_image general groups host \
   kdump keyboard language login_settings networking ntp-client partitioning \
   printer proxy report services-manager software timezone user_defaults users\
   ssh_import)

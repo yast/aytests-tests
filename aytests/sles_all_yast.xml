@@ -53,7 +53,6 @@
       <package>yast2-auth-client</package>
       <package>yast2-auth-server</package>
       <package>yast2-bootloader</package>
-      <package>yast2-ca-management</package>
       <package>yast2-country</package>
       <package>yast2-dhcp-server</package>
       <package>yast2-dns-server</package>

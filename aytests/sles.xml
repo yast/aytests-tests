@@ -807,7 +807,6 @@ sed -i.bak '/pam_nologin/d' /mnt/etc/pam.d/sshd
       <package>yast2-firewall</package>
       <package>yast2-ntp-client</package>
       <package>yast2-printer</package>
-      <package>yast2-ca-management</package>
       <package>xmlstarlet</package>
     </packages>
     <post-packages config:type="list">
