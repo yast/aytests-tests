@@ -50,19 +50,6 @@
 
     <pre-scripts config:type="list">
       <script>
-        <filename>1_prescript.sh</filename>
-        <interpreter>shell</interpreter>
-        <location/>
-        <feedback config:type="boolean">false</feedback>
-        <feedback_type>error</feedback_type>
-        <source><![CDATA[#!/bin/sh
-# Due the DUD yast2-ca-managegment has been installed into inst-sys too.
-# This confuses AutoYaST due missing additional packages like some perl modules in inst-sys.
-# So we are removing the affected ca-management code again.
-rm /usr/share/YaST2/clients/ca_mgm_auto.rb
-        ]]></source>
-      </script>
-      <script>
         <filename>2_prescript.sh</filename>
         <interpreter>shell</interpreter>
         <location/>

@@ -1,6 +1,6 @@
 user.sh                        # vagrant user has been created
 root.sh                        # root hast /root home (bnc#878427)
-#tftp.sh                        # files can be downloaded from tftp server FIXME: https://bugzilla.suse.com/show_bug.cgi?id=1070518
+tftp.sh                        # files can be downloaded from tftp server
 dns.sh                         # DNS server and network are available
 autoinst-userscr.sh            # user scripts have been run
 partition.sh                   # partition_id order fits (bnc#886808)
