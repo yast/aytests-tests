@@ -765,7 +765,7 @@ sed -i.bak '/pam_nologin/d' /mnt/etc/pam.d/sshd
       <pattern>minimal_base</pattern>
     </patterns>
     <products config:type="list">
-      <listentry>SLES15</listentry>
+      <listentry>SLES</listentry>
     </products>
     <packages config:type="list">
       <!-- The following packages are needed to run postinstall.sh -->
