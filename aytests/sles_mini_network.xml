@@ -72,7 +72,7 @@
       <package>glibc-locale</package>
     </packages>
     <products config:type="list">
-      <listentry>SLES15</listentry>
+      <listentry>SLES</listentry>
     </products>
   </software>
 

@@ -162,7 +162,7 @@
       <pattern>minimal_base</pattern>
     </patterns>
     <products config:type="list">
-      <listentry>SLES15</listentry>
+      <listentry>SLES</listentry>
     </products>
   </software>
   <ssh_import>

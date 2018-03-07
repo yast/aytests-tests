@@ -156,7 +156,7 @@ mv /var/run/zypp.sav /var/run/zypp.pid
       <package>zsh</package>
     </remove-packages>
     <products config:type="list">
-      <product>SLES15</product>
+      <product>SLES</product>
     </products>
   </software>
 

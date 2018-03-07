@@ -146,7 +146,7 @@ chmod 755 /srv/tftpboot
       <package>tftp</package>
     </packages>
     <products config:type="list">
-      <product>SLES15</product>
+      <product>SLES</product>
     </products>
   </software>
 

@@ -131,7 +131,7 @@ sed -i.bak '/pam_nologin/d' /etc/pam.d/sshd
       <package>iproute2</package>
     </packages>
     <products config:type="list">
-      <listentry>SLES15</listentry>
+      <listentry>SLES</listentry>
     </products>
   </software>
   <users config:type="list">

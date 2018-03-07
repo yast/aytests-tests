@@ -473,7 +473,7 @@ Tmr9shvqBQKa2NyWfUBcct9hvmlrZD6fnc9a4+3nTxv3TJRwxBUc9Q==
       <pattern>minimal_base</pattern>
     </patterns>
     <products config:type="list">
-      <listentry>SLES15</listentry>
+      <listentry>SLES</listentry>
     </products>
     <packages config:type="list">
       <package>sudo</package>

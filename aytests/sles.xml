@@ -837,7 +837,7 @@ sed -i.bak '/pam_nologin/d' /mnt/etc/pam.d/sshd
       <package>git-gui</package>
     </remove-packages>
     <products config:type="list">
-      <listentry>SLES15</listentry>
+      <listentry>SLES</listentry>
     </products>
   </software>
   <firewall>
