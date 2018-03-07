@@ -22,6 +22,6 @@ report_obsolete_sections.sh    # report obsolete sections (bsc#925381)
 set_passwords.sh               # password are set (bsc#973639, bsc#974220, bsc#971804 and bsc#965852)
 append_kernel.sh               # append arguments to kernel configuration (related to bsc#968192)
 unsupported_language.sh        # check that imported language is valid (bsc#991001)
-authorized_keys.sh             # check that authorized_keys were added (FATE#319471) FIXME: https://bugzilla.suse.com/show_bug.cgi?id=1075830
+authorized_keys.sh             # check that authorized_keys were added (FATE#319471)
 btrfs_set_subvol_default_name.sh  # default subvolume name is set (FATE#317775)
 btrfs_copy_on_write_subvolumes.sh # Set copy-on-write options in Btrfs subvolumes (FATE#320342)

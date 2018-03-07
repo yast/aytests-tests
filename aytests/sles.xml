@@ -802,12 +802,13 @@ sed -i.bak '/pam_nologin/d' /mnt/etc/pam.d/sshd
       <package>tftp</package>
       <package>bind</package>
       <package>syslinux</package>
-      <package>SuSEfirewall2</package>
+      <package>firewalld</package>
       <package>yast2-ftp-server</package>
       <package>yast2-firewall</package>
       <package>yast2-ntp-client</package>
       <package>yast2-printer</package>
       <package>xmlstarlet</package>
+      <package>net-tools</package> <!-- needed for tfpt.sh -->
     </packages>
     <post-packages config:type="list">
       <package>bind</package>
@@ -839,6 +840,10 @@ sed -i.bak '/pam_nologin/d' /mnt/etc/pam.d/sshd
       <listentry>SLES15</listentry>
     </products>
   </software>
+  <firewall>
+    <enable_firewall config:type="boolean">false</enable_firewall>
+    <start_firewall config:type="boolean">false</start_firewall>
+  </firewall>
   <users config:type="list">
     <user>
       <encrypted config:type="boolean">false</encrypted>

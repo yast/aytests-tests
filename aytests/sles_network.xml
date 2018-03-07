@@ -775,6 +775,7 @@ sed -i.bak '/pam_nologin/d' /mnt/etc/pam.d/sshd
       <package>yast2-printer</package>
       <package>xmlstarlet</package>
       <package>firewalld</package>
+      <package>net-tools</package> <!-- needed for tfpt.sh -->
     </packages>
   </software>
   <users config:type="list">

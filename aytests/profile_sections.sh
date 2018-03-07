@@ -8,7 +8,7 @@ AUTOINST="/root/autoinst.xml"
 EXPECTED=(add-on bootloader tftp-server deploy_image general groups host \
   kdump keyboard language login_settings networking ntp-client partitioning \
   printer proxy report services-manager software timezone user_defaults users\
-  ssh_import)
+  ssh_import firewall)
 
 # Current present sections in autoinst.xml
 readarray -t PRESENT < <(xmlstarlet sel -N 'yast2ns=http://www.suse.com/1.0/yast2ns' --template -match "//yast2ns:profile/*" --value-of "name()" --nl $AUTOINST)
