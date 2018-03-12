@@ -10,7 +10,6 @@ no_registration.sh             # registration is not in autoinst.xml (bnc#888168
 ntp_sync.sh                    # ntp time syncing has been passed (bnc#935066)
 installation_no_snapshot.sh    # snapshot has not been created and has not been exported (bnc#1039268)
 no_reinstall.sh                # do no reinstall packages in second stage (fate#319086)
-profile_sections.sh            # all expected sections are present in autoinst.xml (bnc#941948)
 kdump_default.sh               # Taking proposed values if <crash_kernel>, <general> have not been defined in AutoYaST configuration file. (bnc#997448)
 handle_zypper_pkg_gpg_check.sh # handles zypper's pkgGpgCheck callback during installation (bsc#948608)
 restart_services.sh            # do no restart dbus and wickedd* services (bsc#944349)
