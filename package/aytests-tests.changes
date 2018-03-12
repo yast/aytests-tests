@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Mar 12 14:57:40 CET 2018 - schubi@suse.de
+
+- Removed profile_sections.sh from sles_network.rb test due missing
+  firewall settings. Test sles.rb is already calling this check.
+- 1.2.33
+
+-------------------------------------------------------------------
 Wed Mar  7 12:04:13 CET 2018 - schubi@suse.de
 
 - Renaming base product name (SLES15 -> SLES) (bsc#1084259)
