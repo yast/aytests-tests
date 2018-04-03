@@ -15,9 +15,8 @@
 # Please submit bugfixes or comments via http://bugs.opensuse.org/
 #
 
-
 Name:           aytests-tests
-Version:        1.2.34
+Version:        1.2.35
 Release:        0
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
