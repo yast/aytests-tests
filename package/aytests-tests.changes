@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Apr  3 06:54:16 UTC 2018 - riafarov@suse.com
+
+- Remove FW_LOG_ACCEPT_CRIT from lvm profile
+- 1.2.35
+
+-------------------------------------------------------------------
 Mon Mar 26 15:33:12 UTC 2018 - cwh@suse.com
 
 - Adapted btrfs_snapshots.sh to the new format used in fstab.
