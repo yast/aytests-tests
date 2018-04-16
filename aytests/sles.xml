@@ -153,6 +153,7 @@ echo $STR >> $BASE/userscr.log
         <location/>
         <feedback config:type="boolean">false</feedback>
         <source><![CDATA[#!/bin/sh
+rm /run/libstorage-ng/lock
 mv /var/run/zypp.pid /var/run/zypp.sav
 test -f /root/autoinst.xml && rm /root/autoinst.xml
 yast clone_system

@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Apr 16 15:13:14 CEST 2018 - schubi@suse.de
+
+- Removed libstorage-ng lock file /run/libstorage-ng/lock in order
+  to run "yast clone_system" while installation.
+- 1.2.37
+
+-------------------------------------------------------------------
 Thu Apr 12 15:17:58 UTC 2018 - igonzalezsosa@suse.com
 
 - Add a new scenario using a LVM setup with a thin pool

@@ -135,6 +135,7 @@ echo $STR >> $BASE/userscr.log
         <location/>
         <feedback config:type="boolean">false</feedback>
         <source><![CDATA[#!/bin/sh
+rm /run/libstorage-ng/lock
 mv /var/run/zypp.pid /var/run/zypp.sav
 yast clone_system
 mv /var/run/zypp.sav /var/run/zypp.pid
