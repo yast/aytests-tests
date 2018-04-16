@@ -1,0 +1,3 @@
+user.sh          # vagrant user has been created
+lvm.sh           # create lvm logical volumes
+lvm_thin_pool.sh # lvm thin pool support (bsc#1086596)
