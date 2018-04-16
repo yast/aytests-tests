@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Apr 16 15:13:14 CEST 2018 - schubi@suse.de
+
+- Removed libstorage-nt lock file /run/libstorage-ng/lock in order
+  to run "yast clone_system" while installation.
+- 1.2.36
+
+-------------------------------------------------------------------
 Tue Apr  3 06:54:16 UTC 2018 - riafarov@suse.com
 
 - Remove FW_LOG_ACCEPT_CRIT from lvm profile
