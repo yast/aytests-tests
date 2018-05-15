@@ -1,7 +1,6 @@
 aytests/sles.rb
 aytests/sles15.rb
 aytests/sles15_firewalld.rb
-aytests/sles15_lvm_thin_pool.rb
 aytests/sles_minimal.rb
 aytests/sles_minimal_network.rb
 aytests/sles_network.rb
