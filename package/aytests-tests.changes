@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Tue May 15 16:51:31 CEST 2018 - schubi@suse.de
+
+- Timing issue in systemctl: Dalay of service start.
+- Removed sles15_lvm_thin_pool from jenkins list because it cannot
+  run.
+- 1.2.38
+
+-------------------------------------------------------------------
 Mon Apr 16 15:13:14 CEST 2018 - schubi@suse.de
 
 - Removed libstorage-ng lock file /run/libstorage-ng/lock in order
