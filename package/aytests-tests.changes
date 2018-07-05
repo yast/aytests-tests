@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Jul  5 14:38:25 UTC 2018 - riafarov@suse.com
+
+- Use variable for the timeout of AY messages in lvm and tftp profiles
+- 1.1.21
+
+-------------------------------------------------------------------
 Tue Nov 28 11:21:04 UTC 2017 - knut.anderssen@suse.com
 
 - Check that ssh authorized keys for root are written and exported
