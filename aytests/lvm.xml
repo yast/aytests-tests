@@ -61,22 +61,22 @@ mv /var/run/zypp.sav /var/run/zypp.pid
     <errors>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
+      <timeout config:type="integer">{{MSG_TIMEOUT}}</timeout>
     </errors>
     <messages>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
+      <timeout config:type="integer">{{MSG_TIMEOUT}}</timeout>
     </messages>
     <warnings>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
+      <timeout config:type="integer">{{MSG_TIMEOUT}}</timeout>
     </warnings>
     <yesno_messages>
       <log config:type="boolean">true</log>
       <show config:type="boolean">true</show>
-      <timeout config:type="integer">5</timeout>
+      <timeout config:type="integer">{{MSG_TIMEOUT}}</timeout>
     </yesno_messages>
   </report>
 
