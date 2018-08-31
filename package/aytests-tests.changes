@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Aug 29 12:03:25 UTC 2018 - riafarov@suse.com
+
+- Look for unsupported sections message in all log files
+- 1.1.22
+
+-------------------------------------------------------------------
 Thu Jul  5 14:38:25 UTC 2018 - riafarov@suse.com
 
 - Use variable for the timeout of AY messages in lvm and tftp profiles
