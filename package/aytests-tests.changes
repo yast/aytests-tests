@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Aug 30 07:33:44 UTC 2018 - riafarov@suse.com
+
+- Look for unsupported sections message in all log files
+- 1.2.39
+
+-------------------------------------------------------------------
 Tue May 15 16:51:31 CEST 2018 - schubi@suse.de
 
 - Timing issue in systemctl: Dalay of service start.
