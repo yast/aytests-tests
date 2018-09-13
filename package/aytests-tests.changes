@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Sep 13 08:26:42 UTC 2018 - riafarov@suse.com
+
+- Check log messages in all log archives
+- 1.2.40
+
+-------------------------------------------------------------------
 Thu Aug 30 07:33:44 UTC 2018 - riafarov@suse.com
 
 - Look for unsupported sections message in all log files
