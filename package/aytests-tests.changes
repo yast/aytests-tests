@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Nov  7 14:41:35 UTC 2018 - Rodion Iafarov <riafarov@suse.com>
+
+- Fix return code when searching entry in the yast logs
+- 1.1.23
+
+-------------------------------------------------------------------
 Wed Aug 29 12:03:25 UTC 2018 - riafarov@suse.com
 
 - Look for unsupported sections message in all log files
