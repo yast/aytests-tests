@@ -144,6 +144,7 @@ chmod 755 /srv/tftpboot
     </patterns>
     <packages config:type="list">
       <package>tftp</package>
+      <package>yast2-tftp-server</package>
     </packages>
     <products config:type="list">
       <product>SLES</product>
