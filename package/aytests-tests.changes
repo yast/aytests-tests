@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Sep  8 06:56:08 UTC 2022 - Michal Filka <mfilka@suse.com>
+
+- bsc#1203227
+  - replaced fgrep by grep -F
+- 1.2.42 
+
+-------------------------------------------------------------------
 Wed Nov  7 14:57:36 UTC 2018 - Rodion Iafarov <riafarov@suse.com>
 
 - Fix return code when searching entry in the yast logs
